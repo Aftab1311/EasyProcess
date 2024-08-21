@@ -11,8 +11,8 @@ export default function MainHero() {
     <div className="w-full mt-20">
       {/* section-1 */}
 
-      <div className="bg-[url('/images/hero/mainbg.png')] bg-cover bg-center h-[800px] w-full mt-14 flex gap-10 container mx-auto">
-        <div className="w-1/2 flex flex-col mt-72 gap-6 text-white">
+      <div className="bg-[url('/images/hero/mainbg.png')] bg-cover bg-center h-[800px] w-full mt-14 flex gap-10 ">
+        <div className="container mx-auto w-1/2 flex flex-col mt-72 gap-6 text-white">
           <h1 className="text-7xl font-bold underline">Ease My Process.</h1>
           <h3 className="text-4xl font-semibold underline">
             Your Partner for Strategic Growth & Seamless Operations.
