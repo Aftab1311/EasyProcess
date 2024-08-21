@@ -11,41 +11,43 @@ export default function MainHero() {
     <div className="w-full mt-20">
       {/* section-1 */}
 
-      <div className="bg-[url('/images/hero/mainbg.png')] bg-cover bg-center h-[800px] w-full mt-14 flex gap-10 ">
-        <div className="container mx-auto w-1/2 flex flex-col mt-72 gap-6 text-white">
-          <h1 className="text-7xl font-bold underline">Ease My Process.</h1>
-          <h3 className="text-4xl font-semibold underline">
-            Your Partner for Strategic Growth & Seamless Operations.
-          </h3>
-          <button className="w-1/3 bg-white py-2 px-2 text-red-500 underline rounded-md">
-            Contact Us
-          </button>
-        </div>
-        <div className="relative mt-20  ">
-          <div className="rounded-tl-[120px] rounded-b-[85px] overflow-hidden">
+      <div className="bg-[url('/images/hero/mainbg.png')] bg-cover bg-center h-[800px] w-full mt-14 ">
+        <div className="container mx-auto w-full flex gap-10 ">
+          <div className="w-1/2 flex flex-col mt-72 gap-6 text-white">
+            <h1 className="text-7xl font-bold underline">Ease My Process.</h1>
+            <h3 className="text-4xl font-semibold underline">
+              Your Partner for Strategic Growth & Seamless Operations.
+            </h3>
+            <button className="w-1/3 bg-white py-2 px-2 text-red-500 underline rounded-md">
+              Contact Us
+            </button>
+          </div>
+          <div className="relative mt-20  ">
+            <div className="rounded-tl-[120px] rounded-b-[85px] overflow-hidden">
+              <Image
+                className="relative z-10 rounded-tl-[120px] rounded-b-[85px] hover:scale-125 transition duration-1000"
+                src="/images/hero/man.jpg"
+                alt="hero"
+                width={400}
+                height={200}
+              />
+            </div>
+
             <Image
-              className="relative z-10 rounded-tl-[120px] rounded-b-[85px] hover:scale-125 transition duration-1000"
-              src="/images/hero/man.jpg"
-              alt="hero"
-              width={400}
+              className="absolute inset-24 h-[400px] z-0"
+              src="/images/hero/rectborder.png"
+              alt=""
+              width={350}
+              height={200}
+            />
+            <Image
+              className="absolute inset-80 w-[80px] h-[40px] z-0 ml-24"
+              src="/images/hero/Eclipse.png"
+              alt=""
+              width={350}
               height={200}
             />
           </div>
-
-          <Image
-            className="absolute inset-14 w-full h-[400px] z-0"
-            src="/images/hero/rectborder.png"
-            alt=""
-            width={350}
-            height={200}
-          />
-          <Image
-            className="absolute inset-80 w-[80px] h-[40px] z-0 ml-24"
-            src="/images/hero/Eclipse.png"
-            alt=""
-            width={350}
-            height={200}
-          />
         </div>
       </div>
 
