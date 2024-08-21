@@ -53,7 +53,7 @@ export default function MainHero() {
 
       {/* section-2 & 3 */}
       <div className="relative h-[1250px]">
-        <div className="container mx-auto flex justify-center flex-col absolute -top-20 translate-x-14">
+        <div className="container mx-auto flex justify-center flex-col absolute -top-20 left-1/2 -translate-x-1/2">
           <div className="flex items-center">
             <div className="w-2/5 flex justify-center">
               <Image
@@ -78,7 +78,7 @@ export default function MainHero() {
             </div>
           </div>
           <div>
-            <div className="border-[20px] border-black h-[700px] rounded-[80px] w-[85%] flex overflow-hidden  relative z-50 bg-white">
+            <div className="border-[20px] border-black h-[700px] rounded-[80px] w-full flex overflow-hidden left-1/2 -translate-x-1/2  relative z-50 bg-white">
               <div className="overflow-hidden w-1/5 relative">
                 <div className="bg-[url('/images/hero/img1.jpg')] bg-cover bg-center h-full rounded-l-[80px] opacity-60 hover:scale-125 transition duration-1000"></div>
                 <div className="flex flex-col justify-center gap-6  absolute top-80 pl-8">
