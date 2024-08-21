@@ -1,12 +1,31 @@
 import React from "react";
+import { useState } from "react";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import MainServices from "./MainServices";
 import MainContact from "./MainContact";
 import Clients from "./Clients";
 import { GoArrowRight } from "react-icons/go";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 export default function MainHero() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsOpen(true);
+  };
+
+  const handleOpenModal2 = () => {
+    setIsOpen2(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
+  const handleCloseModal2 = () => {
+    setIsOpen2(false);
+  };
   return (
     <div className="w-full mt-8 md:mt-20">
       {/* section-1 */}
@@ -219,9 +238,140 @@ export default function MainHero() {
                 Anchal Singhal
               </h1>
               <h2 className="text-[#838080] font-bold underline">Co-founder</h2>
-              <button className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline">
+              <button
+                className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline"
+                onClick={handleOpenModal}
+              >
                 Read more <GoArrowRight size={30} />
               </button>
+              {isOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                  <div className="bg-white p-6 rounded-[40px] shadow-lg max-w-[1000px] w-full">
+                    <button
+                      className="absolute top-4 right-64  m-4 text-gray-300 hover:text-gray-900"
+                      onClick={handleCloseModal}
+                    >
+                      <IoIosCloseCircleOutline size={50} />
+                    </button>
+                    <div className="flex gap-8">
+                      <div className="w-2/5 flex justify-end">
+                        <img
+                          src="/images/hero/anchal.png"
+                          alt="About Us"
+                          className="w-[300px] h-[500px]"
+                        />
+                      </div>
+                      <div className="w-3/5">
+                        <div className="mb-3">
+                          <h2 className="text-3xl font-bold text-[#d2042d] underline">
+                            Anchal Singh
+                          </h2>
+                          <h3 className="text-xl text-[#838080] underline">
+                            Co-founder
+                          </h3>
+                        </div>
+                        <div className="underline text-base mb-8">
+                          10+ years of experience
+                        </div>
+                        <div className="text-base uppercase font-bold">
+                          EDUCATIONAL QUALIFICATION
+                        </div>
+                        <div>
+                          <ul className="list-disc ml-6">
+                            <li className="text-base">
+                              Chartered Accountant,{" "}
+                              <span className="font-bold">
+                                Institute of Chartered Accountants of India
+                              </span>
+                            </li>
+                            <li className="text-base">
+                              Bcom,{" "}
+                              <span className="font-bold">
+                                {" "}
+                                Delhi University
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="flex my-6">
+                          <Image
+                            src="/images/hero/ey.png"
+                            alt="LinkedIn"
+                            width={150}
+                            height={40}
+                            className=" w-40 h-12 md:h-24 mx-2 px-14 object-contain rounded-lg"
+                            style={{ boxShadow: "0px 4px 4px 0px #00000040" }}
+                          />
+                          <Image
+                            src="/images/hero/del.png"
+                            alt="LinkedIn"
+                            width={300}
+                            height={40}
+                            className=" w-40 h-12 md:h-24 mx-2 px-10 object-contain rounded-lg"
+                            style={{ boxShadow: "0px 4px 4px 0px #00000040" }}
+                          />
+                          <Image
+                            src="/images/hero/pwc.png"
+                            alt="LinkedIn"
+                            width={150}
+                            height={40}
+                            className=" w-40 h-12 md:h-24 mx-2 px-14 object-contain rounded-lg"
+                            style={{ boxShadow: "0px 4px 4px 0px #00000040" }}
+                          />
+                        </div>
+                        <div>
+                          <ul className="text-base mb-4">
+                            <li className="font-bold underline">
+                              SECTORS EXPERTISE
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Fintech
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Tech Start-ups
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Oil & Gas
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Power & Utilities
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Media & Entertainment
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Manufacturing
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Education
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <ul className="text-base">
+                            <li className="font-bold  ml-4 underline">KEY SKILL</li>
+                            <li className="list-disc  ml-4">
+                              Corporate Finance
+                            </li>
+                            <li className="list-disc  ml-4">
+                              Business Valuation
+                            </li>
+                            <li className="list-disc  ml-4">
+                              Financial Modelling
+                            </li>
+                            <li className="list-disc  ml-4">
+                              Excel Automation
+                            </li>
+                            <li className="list-disc  ml-4">
+                              Transaction structuring and Implementation
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
             <div className=" flex flex-col justify-center items-center gap-2 relative group">
               <div className="overflow-hidden">
@@ -233,6 +383,7 @@ export default function MainHero() {
                   className="hover:scale-110 transition duration-700"
                 />
                 <div className="absolute bottom-40 left-1/2  -translate-x-1/2 w-[60px] h-[60px] rounded-full bg-black group-hover:bg-[#007ab9] transition duration-700 cursor-pointer bg-opacity-35 flex items-center justify-center">
+                <a href="https://www.linkedin.com/in/gujrani/">
                   <Image
                     src="/images/hero/linkedin.png"
                     alt="LinkedIn Icon"
@@ -240,15 +391,142 @@ export default function MainHero() {
                     height={40}
                     className="w-[40px] h-[40px] "
                   />
+                  </a>
                 </div>
               </div>
               <h1 className="text-xl underline text-center text-[#d2042d] font-bold">
                 Anant Gujrani
               </h1>
               <h2 className="text-[#838080] font-bold underline">Co-founder</h2>
-              <button className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline">
+              <button
+                className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline"
+                onClick={handleOpenModal2}
+              >
                 Read more <GoArrowRight size={30} />
               </button>
+              {isOpen2 && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                  <div className="bg-white p-6 rounded-[40px] shadow-lg max-w-[1000px] w-full">
+                    <button
+                      className="absolute top-4 right-64  m-4 text-gray-300 hover:text-gray-900"
+                      onClick={handleCloseModal2}
+                    >
+                      <IoIosCloseCircleOutline size={50} />
+                    </button>
+                    <div className="flex gap-8">
+                      <div className="w-2/5 flex justify-end">
+                        <img
+                          src="/images/hero/anchal2.png"
+                          alt="About Us"
+                          className="w-[300px] h-[500px]"
+                        />
+                      </div>
+                      <div className="w-3/5">
+                        <div className="mb-3">
+                          <h2 className="text-3xl font-bold text-[#d2042d] underline">
+                            Anant Gujrani
+                          </h2>
+                          <h3 className="text-xl text-[#838080] underline">
+                            Co-founder
+                          </h3>
+                        </div>
+                        <div className="underline text-base mb-8">
+                          Known for bringing efficiency through process
+                          automation
+                        </div>
+                        <div className="text-base uppercase font-bold">
+                          EDUCATIONAL QUALIFICATION
+                        </div>
+                        <div>
+                          <ul className="list-disc ml-6">
+                            <li className="text-base">
+                              Chartered Accountant,{" "}
+                              <span className="font-bold">
+                                Institute of Chartered Accountants of India
+                              </span>
+                            </li>
+                            <li className="text-base">
+                              Bcom,{" "}
+                              <span className="font-bold">
+                                {" "}
+                                Delhi University
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="flex my-6">
+                          <Image
+                            src="/images/hero/shaw.png"
+                            alt="LinkedIn"
+                            width={150}
+                            height={40}
+                            className=" w-40 h-12 md:h-24 mx-2 px-8 object-contain rounded-lg"
+                            style={{ boxShadow: "0px 4px 4px 0px #00000040" }}
+                          />
+                          <Image
+                            src="/images/hero/del.png"
+                            alt="LinkedIn"
+                            width={300}
+                            height={40}
+                            className=" w-40 h-12 md:h-24 mx-2 px-10 object-contain rounded-lg"
+                            style={{ boxShadow: "0px 4px 4px 0px #00000040" }}
+                          />
+                          <Image
+                            src="/images/hero/singhi.png"
+                            alt="LinkedIn"
+                            width={250}
+                            height={40}
+                            className=" w-40 h-12 md:h-24 mx-2 px-8 object-contain rounded-lg"
+                            style={{ boxShadow: "0px 4px 4px 0px #00000040" }}
+                          />
+                        </div>
+                        <div>
+                          <ul className="text-base mb-4">
+                            <li className="font-bold underline">
+                              SECTORS EXPERTISE
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Hedge Fund
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Non — ferrous metal
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Telecommunication
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Fertilizer
+                            </li>
+                            <li className=" underline list-disc ml-4">FMCG</li>
+                            <li className=" underline list-disc ml-4">
+                              Robotic
+                            </li>
+                            <li className=" underline list-disc ml-4">
+                              Fintech
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <ul className="text-base">
+                            <li className="font-bold  underline">KEY SKILL</li>
+                            <li className="list-disc  ml-4">Accounting</li>
+                            <li className="list-disc  ml-4">Advance Excel</li>
+                            <li className="list-disc  ml-4">
+                              Datq Analysis/ Visualization
+                            </li>
+                            <li className="list-disc  ml-4">
+                              Financial Reporting
+                            </li>
+                            <li className="list-disc  ml-4">
+                              Data/Process Automation
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
