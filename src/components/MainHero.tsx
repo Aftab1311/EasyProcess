@@ -50,8 +50,8 @@ export default function MainHero() {
       </div>
 
       {/* section-2 & 3 */}
-      <div className="container mx-auto relative h-[1250px]">
-        <div className="flex justify-center flex-col absolute -top-20 translate-x-14">
+      <div className="relative h-[1250px]">
+        <div className="container mx-auto flex justify-center flex-col absolute -top-20 translate-x-14">
           <div className="flex items-center">
             <div className="w-2/5 flex justify-center">
               <Image
