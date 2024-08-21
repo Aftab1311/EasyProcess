@@ -11,41 +11,42 @@ import { HiMiniChevronDoubleRight } from "react-icons/hi2";
 
 const services = [
   {
-    title: "Pitch Deck Creation",
+    title: "Fund Raising",
     icon: <RiPresentationFill />,
     bg: "/services/pdbg.svg",
-    desc: "Elevate your pitch with our comprehensive Pitch Deck Creation service, from market research to stunning design. We create pitch decks that tell your story, showcase your potential, and grab investor attention in those crucial first minutes.",
+    desc: "Secure the capital you need to grow and scale with EaseMyProcess. Our expert team provides strategic, data-driven solutions and end-to-end support to navigate the complex funding landscape, ensuring your business stands out to investors.",
   },
   {
-    title: "Pitch Training",
+    title: "Valuation",
     bg: "/services/ptbg.svg",
     icon: <TfiBlackboard />,
-    desc: "Your pitch deck is only half the battle. We equip you with the skills to deliver it with confidence and captivate investors. We'll help you refine your storytelling, develop captivating stage presence, and hone your ability to handle tough Q&A sessions.",
+    desc: "Unlock the true value of your business with our precise and investor-approved valuation services. Using multi-method approaches and realistic financial modeling, we deliver credible valuations that meet international standards and satisfy investor scrutiny.",
   },
   {
-    title: "Business Plan",
+    title: "Pitch Deck & Modelling",
     bg: "/services/bpbg.svg",
     icon: <FaClipboardList />,
-    desc: "Forge a clear path to success with our Business Plan service. We guide you through crafting a strategic roadmap, forecasting 3-5 years ahead with meticulous Market and Competitor Analysis.",
+    desc: "Captivate investors in just 3 minutes with a compelling pitch deck from EaseMyProcess. Our Wall Street-level presentations, comprehensive business plans, and advanced financial models increase your chances of securing funding by 75%.",
   },
   {
-    title: "Teaser",
-    bg: "/services/tbg.svg",
-    icon: <PiStrategyBold />,
-    desc: "Fuel Investor Interest with a Captivating Teaser. We craft teasers that are more than just introductions - they're strategic hooks that pique investor curiosity and leave them wanting more.",
-  },
-  {
-    title: "Detailed Financial Modelling",
-    bg: "/services/dfmbg.svg",
-    icon: <FaFileInvoiceDollar />,
-    desc: "Go beyond static spreadsheets. Our dynamic, editable models provide three-statement forecasts, key financial charts, insightful dashboards, and funding/capital table projections. Gain a clear financial picture and impress investors with your data-driven approach.",
-  },
-  {
-    title: "Industry and Competitor Analysis",
+    title: "Accounting & Compliance",
     bg: "/services/icabg.svg",
     icon: <IoStatsChart />,
-    desc: "Know Your Market, Conquer Your Competitors We dive deep into your industry landscape, uncovering key insights on revenue, competitors, market strategies, and more. Stay ahead of the curve and make informed decisions that drive success.",
+    desc: "Streamline yourfinancial processes and ensure compliance with EaseMyProcess. Save up to 60% on accounting costs with our professional. technology-driven services, from dailyrecord-keeping to comprehensive audit support and regulatory compliance.",
   },
+  {
+    title: "Financial Planning & Analysis",
+    bg: "/services/tbg.svg",
+    icon: <PiStrategyBold />,
+    desc: "Transform your business with expert financial analysis and Excel automation from EaseMyProcess. Improve accuracy, boost efficiency by up to 80%, and make data-driven decisions with our tailored dashboards forecasting, and budgeting solutions.",
+  },
+  {
+    title: "Deal Advisory & Implementation",
+    bg: "/services/dfmbg.svg",
+    icon: <FaFileInvoiceDollar />,
+    desc: "Maximize your investment opportunities and achieve successful deals with EaseMyProcess. We provide end-to-end deal advisory. strategic M&A structuring, and seamless transaction support, ensuring smart investments and strong exits.",
+  },
+ 
 ];
 
 export default function MainServices() {
