@@ -30,19 +30,19 @@ const services = [
   },
   {
     title: "Accounting & Compliance",
-    bg: "/services/icabg.svg",
+    bg: "/images/hero/ser4.png",
     icon: <IoStatsChart />,
     desc: "Streamline yourfinancial processes and ensure compliance with EaseMyProcess. Save up to 60% on accounting costs with our professional. technology-driven services, from dailyrecord-keeping to comprehensive audit support and regulatory compliance.",
   },
   {
     title: "Financial Planning & Analysis",
-    bg: "/services/tbg.svg",
+    bg: "/images/hero/ser5.png",
     icon: <PiStrategyBold />,
     desc: "Transform your business with expert financial analysis and Excel automation from EaseMyProcess. Improve accuracy, boost efficiency by up to 80%, and make data-driven decisions with our tailored dashboards forecasting, and budgeting solutions.",
   },
   {
     title: "Deal Advisory & Implementation",
-    bg: "/services/dfmbg.svg",
+    bg: "/images/hero/ser6.png",
     icon: <FaFileInvoiceDollar />,
     desc: "Maximize your investment opportunities and achieve successful deals with EaseMyProcess. We provide end-to-end deal advisory. strategic M&A structuring, and seamless transaction support, ensuring smart investments and strong exits.",
   },
