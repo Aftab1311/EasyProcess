@@ -273,20 +273,20 @@ export default function MainHero() {
                         <div className="underline text-base mb-8">
                           10+ years of experience
                         </div>
-                        <div className="text-base uppercase font-bold">
+                        <div className="text-base uppercase font-bold underline">
                           EDUCATIONAL QUALIFICATION
                         </div>
                         <div>
                           <ul className="list-disc ml-6">
-                            <li className="text-base">
+                            <li className="text-base underline">
                               Chartered Accountant,{" "}
-                              <span className="font-bold">
+                              <span className="font-bold underline">
                                 Institute of Chartered Accountants of India
                               </span>
                             </li>
-                            <li className="text-base">
+                            <li className="text-base underline">
                               Bcom,{" "}
-                              <span className="font-bold">
+                              <span className="font-bold underline">
                                 {" "}
                                 Delhi University
                               </span>
@@ -350,19 +350,19 @@ export default function MainHero() {
                         <div>
                           <ul className="text-base">
                             <li className="font-bold  ml-4 underline">KEY SKILL</li>
-                            <li className="list-disc  ml-4">
+                            <li className="list-disc  ml-4 underline">
                               Corporate Finance
                             </li>
-                            <li className="list-disc  ml-4">
+                            <li className="list-disc  ml-4 underline">
                               Business Valuation
                             </li>
-                            <li className="list-disc  ml-4">
+                            <li className="list-disc  ml-4 underline">
                               Financial Modelling
                             </li>
-                            <li className="list-disc  ml-4">
+                            <li className="list-disc  ml-4 underline">
                               Excel Automation
                             </li>
-                            <li className="list-disc  ml-4">
+                            <li className="list-disc  ml-4 underline">
                               Transaction structuring and Implementation
                             </li>
                           </ul>
@@ -434,20 +434,20 @@ export default function MainHero() {
                           Known for bringing efficiency through process
                           automation
                         </div>
-                        <div className="text-base uppercase font-bold">
+                        <div className="text-base uppercase underline font-bold">
                           EDUCATIONAL QUALIFICATION
                         </div>
                         <div>
                           <ul className="list-disc ml-6">
-                            <li className="text-base">
+                            <li className="text-base underline">
                               Chartered Accountant,{" "}
-                              <span className="font-bold">
+                              <span className="font-bold underline">
                                 Institute of Chartered Accountants of India
                               </span>
                             </li>
-                            <li className="text-base">
+                            <li className="text-base underline">
                               Bcom,{" "}
-                              <span className="font-bold">
+                              <span className="font-bold underline">
                                 {" "}
                                 Delhi University
                               </span>
@@ -509,15 +509,15 @@ export default function MainHero() {
                         <div>
                           <ul className="text-base">
                             <li className="font-bold  underline">KEY SKILL</li>
-                            <li className="list-disc  ml-4">Accounting</li>
-                            <li className="list-disc  ml-4">Advance Excel</li>
-                            <li className="list-disc  ml-4">
+                            <li className="list-disc  ml-4 underline">Accounting</li>
+                            <li className="list-disc  ml-4 underline">Advance Excel</li>
+                            <li className="list-disc  ml-4 underline">
                               Datq Analysis/ Visualization
                             </li>
-                            <li className="list-disc  ml-4">
+                            <li className="list-disc  ml-4 underline">
                               Financial Reporting
                             </li>
-                            <li className="list-disc  ml-4">
+                            <li className="list-disc  ml-4 underline">
                               Data/Process Automation
                             </li>
                           </ul>
