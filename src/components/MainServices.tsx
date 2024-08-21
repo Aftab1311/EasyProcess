@@ -13,18 +13,18 @@ const services = [
   {
     title: "Fund Raising",
     icon: <RiPresentationFill />,
-    bg: "/services/pdbg.svg",
+    bg: "/images/hero/ser1.jpg",
     desc: "Secure the capital you need to grow and scale with EaseMyProcess. Our expert team provides strategic, data-driven solutions and end-to-end support to navigate the complex funding landscape, ensuring your business stands out to investors.",
   },
   {
     title: "Valuation",
-    bg: "/services/ptbg.svg",
+    bg: "/images/hero/ser2.jpg",
     icon: <TfiBlackboard />,
     desc: "Unlock the true value of your business with our precise and investor-approved valuation services. Using multi-method approaches and realistic financial modeling, we deliver credible valuations that meet international standards and satisfy investor scrutiny.",
   },
   {
     title: "Pitch Deck & Modelling",
-    bg: "/services/bpbg.svg",
+    bg: "/images/hero/ser3.jpg",
     icon: <FaClipboardList />,
     desc: "Captivate investors in just 3 minutes with a compelling pitch deck from EaseMyProcess. Our Wall Street-level presentations, comprehensive business plans, and advanced financial models increase your chances of securing funding by 75%.",
   },
