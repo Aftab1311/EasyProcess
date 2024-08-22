@@ -93,21 +93,21 @@ function ServiceCard({
       className="w-full"
     >
       {/* bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 */}
-      <div className="relative rounded-lg group shadow-lg md:w-96 h-96 overflow-hidden hover:shadow-2xl mb-10">
+      <div className="relative rounded-lg group shadow-lg md:w-96  h-[20rem] md:h-96 overflow-hidden hover:shadow-2xl mb-10">
         <Image src={bg} alt={title} width={1000} height={1000} className="" />
         <div className="w-full h-[120px] group-hover:h-full flex items-center flex-col duration-500 bg-white absolute bottom-0 group-hover:bottom-1/5 left-0">
-          <div className="absolute -mt-6 group-hover:mt-10 bg-red-600 transition group-hover:duration-300 group-hover:rounded-xl group-hover:border-2 group-hover:border-red-600 p-2 rounded-full text-3xl text-white mx-auto shadow-xl group-hover:bg-white group-hover:text-red-600">
+          <div className="absolute -mt-6 group-hover:mt-3 md:group-hover:mt-10 bg-red-600 transition group-hover:duration-300 group-hover:rounded-xl group-hover:border-2 group-hover:border-red-600 p-2 rounded-full text-3xl text-white mx-auto shadow-xl group-hover:bg-white group-hover:text-red-600">
             {icon}
           </div>
-          <h3 className="text-3xl text-red-600 font-semibold ml-4 py-4 text-center mt-4 group-hover:mt-24 group-hover:text-xl">
+          <h3 className="text-3xl text-red-600 font-semibold ml-4 py-4 text-center mt-4 group-hover:mt-16 md:group-hover:mt-24 group-hover:text-xl">
             {title}
           </h3>
-          <span className="mx-6 my-2 text-sm underline text-center opacity-0 group-hover:opacity-100 transition group-hover:duration-100 group-hover:delay-300">
+          <span className="mx-6 md:my-2 text-sm underline text-center opacity-0 group-hover:opacity-100 transition group-hover:duration-100 group-hover:delay-300 group-hover:text-[12px] md:group-hover:text-sm">
             {desc}
           </span>
           <a
             href="/PitchDeck"
-            className="bg-red-700 px-5 py-1 text-white mt-6 rounded-3xl inline-flex items-center"
+            className="bg-red-700 px-5 py-1 text-white mt-2 md:mt-6 rounded-3xl inline-flex items-center"
           >
             <HiMiniChevronDoubleRight size={24} />
           </a>

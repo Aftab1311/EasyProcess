@@ -90,36 +90,36 @@ export default function MainHero() {
                 sizes="100vw"
               />
             </div>
-            <div className="w-full md:w-1/2 flex flex-col gap-4">
+            <div className="w-full md:w-1/2 flex flex-col items-center md:items-start gap-4">
               <h1 className="text-[#d2042d] text-3xl md:text-6xl font-bold underline mb-4">
                 Need Funding?
               </h1>
               <h2 className="text-black text-lg md:text-5xl underline">
                 Want Financial Control?
               </h2>
-              <h3 className="w-[85%] text-base md:text-2xl underline">
+              <h3 className="w-[85%] text-base md:text-2xl underline text-center md:text-start mb-10 md:mb-0">
                 Did you know 82% Of start-ups fail due to poor financial
                 management? Let our team help you in achieve financial success.
               </h3>
             </div>
           </div>
           <div>
-            <div className="border-[20px] border-black h-[700px] rounded-[80px] w-full flex overflow-hidden left-1/2 -translate-x-1/2  relative z-50 bg-white">
-              <div className="overflow-hidden w-1/5 relative">
-                <div className="bg-[url('/images/hero/img1.jpg')] bg-cover bg-center h-full rounded-l-[80px] opacity-60 hover:scale-125 transition duration-1000"></div>
-                <div className="flex flex-col justify-center gap-6  absolute top-80 pl-8">
-                  <h2 className="text-4xl text-red-600 underline">
+            <div className="border-[6px] md:border-[20px] border-black h-[700px] rounded-[80px] w-full flex flex-col md:flex-row overflow-hidden left-1/2 -translate-x-1/2  relative z-50 bg-white">
+              <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
+                <div className="bg-[url('/images/hero/img1.jpg')] bg-cover bg-center h-full w-full md:rounded-l-[80px] opacity-60 hover:scale-125 transition duration-1000"></div>
+                <div className="flex flex-col justify-center gap-6  absolute md:top-80 pl-8">
+                  <h2 className="text-xl md:text-4xl text-red-600 underline">
                     Quality Assurance
                   </h2>
                   <div>
-                    <h3 className="text-base text-black underline">
+                    <h3 className="text-sm md:text-base text-black underline">
                       Trusted by
                     </h3>
-                    <h2 className="text-3xl text-black underline">Top firms</h2>
+                    <h2 className="text-base md:text-3xl text-black underline">Top firms</h2>
                   </div>
                 </div>
               </div>
-              <div className="overflow-hidden w-1/5 relative">
+              <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img2.jpg')] bg-cover bg-center h-full opacity-30 hover:scale-125 transition duration-1000 "></div>
                 <div className="flex flex-col justify-center gap-6  absolute top-10 pl-8">
                   <h2 className="text-4xl text-red-600 underline">
@@ -134,7 +134,7 @@ export default function MainHero() {
                 </div>
               </div>
 
-              <div className="overflow-hidden w-1/5 relative">
+              <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img3.jpg')] bg-cover bg-center h-full opacity-30 hover:scale-125 transition duration-1000  "></div>
                 <div className="flex flex-col justify-center gap-6  absolute top-80 pl-8">
                   <h2 className="text-4xl text-red-600 underline">
@@ -150,7 +150,7 @@ export default function MainHero() {
                   </div>
                 </div>
               </div>
-              <div className="overflow-hidden w-1/5 relative">
+              <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img4.jpg')] bg-cover bg-center h-full opacity-30  hover:scale-125 transition duration-1000 "></div>
                 <div className="flex flex-col justify-center gap-6  absolute top-10 pl-8">
                   <h2 className="text-4xl text-red-600 underline">
@@ -164,7 +164,7 @@ export default function MainHero() {
                   </div>
                 </div>
               </div>
-              <div className="overflow-hidden w-1/5 relative">
+              <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img5.jpg')] bg-cover bg-center h-full rounded-r-[60px] opacity-30 hover:scale-125  transition duration-1000"></div>
                 <div className="flex flex-col justify-center gap-6  absolute bottom-20 pr-4 pl-4">
                   <h2 className="text-4xl text-red-600 underline">
@@ -197,8 +197,8 @@ export default function MainHero() {
       {/* section-7 */}
 
       <div className="bg-[#f1f1f1]">
-        <div className="container mx-auto py-20 flex justify-evenly gap-10">
-          <div className="w-1/2 ml-20 flex flex-col justify-center gap-8">
+        <div className="container mx-auto py-8 md:py-20 flex flex-col md:flex-row justify-evenly gap-10">
+          <div className="w-[80%] md:w-1/2 ml-10 md:ml-20 flex flex-col justify-center gap-8">
             <div className="bg-white rounded-full h-16 w-16 flex justify-center items-center">
               <Image
                 src="/images/hero/comma.png"
@@ -208,7 +208,7 @@ export default function MainHero() {
                 className="hover:scale-110"
               />
             </div>
-            <h1 className="text-4xl underline">
+            <h1 className="text-xl lg:text-4xl underline">
               We are strong team who brings innovative ideas into production.
             </h1>
           </div>
@@ -223,13 +223,13 @@ export default function MainHero() {
                   height={300}
                   className="hover:scale-110 transition duration-700"
                 />
-                <div className="absolute bottom-40 left-1/2  -translate-x-1/2 w-[60px] h-[60px] rounded-full bg-black group-hover:bg-[#007ab9] transition duration-700 cursor-pointer  bg-opacity-35 flex items-center justify-center">
+                <div className="absolute bottom-36 md:bottom-40 left-1/2  -translate-x-1/2 w-[40px] md:w-[60px] h-[40px] md:h-[60px] rounded-full bg-black group-hover:bg-[#007ab9] transition duration-700 cursor-pointer  bg-opacity-35 flex items-center justify-center">
                   <Image
                     src="/images/hero/linkedin.png"
                     alt="LinkedIn Icon"
                     width={40}
                     height={40}
-                    className="w-[40px] h-[40px] "
+                    className="w-[20px] md:w-[40px] h-[20px] md:h-[40px] "
                   />
                 </div>
               </div>
@@ -242,49 +242,49 @@ export default function MainHero() {
                 className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline"
                 onClick={handleOpenModal}
               >
-                Read more <GoArrowRight size={30} />
+                <span className="text-[12px]">Read more</span> <span className="hidden md:block"><GoArrowRight size={30} /></span><span className="block md:hidden"><GoArrowRight size={20} /></span>
               </button>
               {isOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
                   <div className="bg-white p-6 rounded-[40px] shadow-lg max-w-[1000px] w-full">
                     <button
-                      className="absolute top-4 right-64  m-4 text-gray-300 hover:text-gray-900"
+                      className="absolute right-1 md:top-4 md:right-64  m-4 text-gray-300 hover:text-gray-900"
                       onClick={handleCloseModal}
                     >
-                      <IoIosCloseCircleOutline size={50} />
+                      <span className="block md:hidden"><IoIosCloseCircleOutline size={40} /></span><span className="md:block hidden"><IoIosCloseCircleOutline size={50} /></span>
                     </button>
-                    <div className="flex gap-8">
-                      <div className="w-2/5 flex justify-end">
+                    <div className="flex flex-col md:flex-row gap-2 md:gap-8">
+                      <div className="w-full md:w-2/5 flex md:justify-end">
                         <img
                           src="/images/hero/anchal.png"
                           alt="About Us"
-                          className="w-[300px] h-[500px]"
+                          className="w-[200px] md:w-[300px] h-[250px] md:h-[400px]"
                         />
                       </div>
-                      <div className="w-3/5">
-                        <div className="mb-3">
-                          <h2 className="text-3xl font-bold text-[#d2042d] underline">
+                      <div className="w-full md:w-3/5">
+                        <div className="mb-1 md:mb-3">
+                          <h2 className="text-base md:text-3xl font-bold text-[#d2042d] underline">
                             Anchal Singh
                           </h2>
-                          <h3 className="text-xl text-[#838080] underline">
+                          <h3 className="text-sm md:text-xl text-[#838080] underline">
                             Co-founder
                           </h3>
                         </div>
-                        <div className="underline text-base mb-8">
+                        <div className="underline text-sm md:text-base mb-2 md:mb-8">
                           10+ years of experience
                         </div>
-                        <div className="text-base uppercase font-bold underline">
+                        <div className="text-[12px] md:text-base uppercase font-bold underline">
                           EDUCATIONAL QUALIFICATION
                         </div>
                         <div>
                           <ul className="list-disc ml-6">
-                            <li className="text-base underline">
+                            <li className=" text-[12px] md:text-base underline">
                               Chartered Accountant,{" "}
                               <span className="font-bold underline">
                                 Institute of Chartered Accountants of India
                               </span>
                             </li>
-                            <li className="text-base underline">
+                            <li className="text-[12px] md:text-base underline">
                               Bcom,{" "}
                               <span className="font-bold underline">
                                 {" "}
@@ -293,7 +293,7 @@ export default function MainHero() {
                             </li>
                           </ul>
                         </div>
-                        <div className="flex my-6">
+                        <div className="flex my-2 md:my-6">
                           <Image
                             src="/images/hero/ey.png"
                             alt="LinkedIn"
@@ -320,7 +320,7 @@ export default function MainHero() {
                           />
                         </div>
                         <div>
-                          <ul className="text-base mb-4">
+                          <ul className="text-[12px] md:text-base mb-4">
                             <li className="font-bold underline">
                               SECTORS EXPERTISE
                             </li>
@@ -348,7 +348,7 @@ export default function MainHero() {
                           </ul>
                         </div>
                         <div>
-                          <ul className="text-base">
+                          <ul className="text-[12px] md:text-base">
                             <li className="font-bold  ml-4 underline">KEY SKILL</li>
                             <li className="list-disc  ml-4 underline">
                               Corporate Finance
@@ -382,19 +382,19 @@ export default function MainHero() {
                   height={300}
                   className="hover:scale-110 transition duration-700"
                 />
-                <div className="absolute bottom-40 left-1/2  -translate-x-1/2 w-[60px] h-[60px] rounded-full bg-black group-hover:bg-[#007ab9] transition duration-700 cursor-pointer bg-opacity-35 flex items-center justify-center">
+                <div className="absolute bottom-36 md:bottom-40 left-1/2  -translate-x-1/2 w-[40px] md:w-[60px] h-[40px] md:h-[60px] rounded-full bg-black group-hover:bg-[#007ab9] transition duration-700 cursor-pointer bg-opacity-35 flex items-center justify-center">
                 <a href="https://www.linkedin.com/in/gujrani/">
                   <Image
                     src="/images/hero/linkedin.png"
                     alt="LinkedIn Icon"
                     width={40}
                     height={40}
-                    className="w-[40px] h-[40px] "
+                    className="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
                   />
                   </a>
                 </div>
               </div>
-              <h1 className="text-xl underline text-center text-[#d2042d] font-bold">
+              <h1 className="w-2/3 text-xl underline text-center text-[#d2042d] font-bold">
                 Anant Gujrani
               </h1>
               <h2 className="text-[#838080] font-bold underline">Co-founder</h2>
@@ -402,50 +402,50 @@ export default function MainHero() {
                 className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline"
                 onClick={handleOpenModal2}
               >
-                Read more <GoArrowRight size={30} />
-              </button>
+                <span className="text-[12px]">Read more</span> <span className="hidden md:block"><GoArrowRight size={30} /></span><span className="block md:hidden"><GoArrowRight size={20} /></span>
+                </button>
               {isOpen2 && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
                   <div className="bg-white p-6 rounded-[40px] shadow-lg max-w-[1000px] w-full">
                     <button
-                      className="absolute top-4 right-64  m-4 text-gray-300 hover:text-gray-900"
+                      className="absolute md: right-1 md:top-4 md:right-64  m-4 text-gray-300 hover:text-gray-900"
                       onClick={handleCloseModal2}
                     >
-                      <IoIosCloseCircleOutline size={50} />
-                    </button>
-                    <div className="flex gap-8">
-                      <div className="w-2/5 flex justify-end">
+                      <span className="block md:hidden"><IoIosCloseCircleOutline size={40} /></span><span className="md:block hidden"><IoIosCloseCircleOutline size={50} /></span>
+                      </button>
+                    <div className="flex flex-col md:flex-row gap-2 md:gap-8">
+                      <div className="w-full md:w-2/5 flex md:justify-end">
                         <img
                           src="/images/hero/anchal2.png"
                           alt="About Us"
-                          className="w-[300px] h-[500px]"
+                          className="w-[200px] md:w-[300px] h-[250px] md:h-[400px]"
                         />
                       </div>
-                      <div className="w-3/5">
-                        <div className="mb-3">
-                          <h2 className="text-3xl font-bold text-[#d2042d] underline">
+                      <div className="w-full md:w-3/5">
+                        <div className="mb-1 md:mb-3">
+                          <h2 className="text-xl md:text-3xl font-bold text-[#d2042d] underline">
                             Anant Gujrani
                           </h2>
-                          <h3 className="text-xl text-[#838080] underline">
+                          <h3 className="text-base md:text-xl text-[#838080] underline">
                             Co-founder
                           </h3>
                         </div>
-                        <div className="underline text-base mb-8">
+                        <div className="underline text-[12px] md:text-base mb-2 md:mb-8">
                           Known for bringing efficiency through process
                           automation
                         </div>
-                        <div className="text-base uppercase underline font-bold">
+                        <div className="text-[12px] md:text-base uppercase underline font-bold">
                           EDUCATIONAL QUALIFICATION
                         </div>
                         <div>
                           <ul className="list-disc ml-6">
-                            <li className="text-base underline">
+                            <li className="text-[12px] md:text-base underline">
                               Chartered Accountant,{" "}
                               <span className="font-bold underline">
                                 Institute of Chartered Accountants of India
                               </span>
                             </li>
-                            <li className="text-base underline">
+                            <li className="text-[12px] md:text-base underline">
                               Bcom,{" "}
                               <span className="font-bold underline">
                                 {" "}
@@ -454,7 +454,7 @@ export default function MainHero() {
                             </li>
                           </ul>
                         </div>
-                        <div className="flex my-6">
+                        <div className="flex my-2 md:my-6">
                           <Image
                             src="/images/hero/shaw.png"
                             alt="LinkedIn"
@@ -481,7 +481,7 @@ export default function MainHero() {
                           />
                         </div>
                         <div>
-                          <ul className="text-base mb-4">
+                          <ul className="text-[12px] md:text-base mb-2 md:mb-4">
                             <li className="font-bold underline">
                               SECTORS EXPERTISE
                             </li>
@@ -507,7 +507,7 @@ export default function MainHero() {
                           </ul>
                         </div>
                         <div>
-                          <ul className="text-base">
+                          <ul className="text-[12px] md:text-base">
                             <li className="font-bold  underline">KEY SKILL</li>
                             <li className="list-disc  ml-4 underline">Accounting</li>
                             <li className="list-disc  ml-4 underline">Advance Excel</li>

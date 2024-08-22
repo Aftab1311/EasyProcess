@@ -115,7 +115,7 @@ export default function FAQs({ }: Props) {
             key={index}
           >
             <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-              <h2 className="text-xl underline font-medium text-gray-900">
+              <h2 className="text-sm md:text-xl underline font-medium text-gray-900">
                 {qa.question}
               </h2>
 
@@ -124,7 +124,7 @@ export default function FAQs({ }: Props) {
               </span>
             </summary>
 
-            <div className="mt-4 leading-relaxed text-gray-700">
+            <div className="mt-4 leading-relaxed text-[12px] md:text-base text-gray-700">
               {qa.answer.split('\n').map((line, i) => (
                 <p key={i} className="mb-2">
                   {line}

@@ -21,8 +21,8 @@ const clients = [
 export default function Clients() {
   return (
     <div className="w-full container mx-auto py-20 flex flex-col justify-center items-center gap-4">
-      <h1 className="text-[#a60424] underline text-6xl">Clients served</h1>
-      <h3 className="text-black underline text-2xl">
+      <h1 className="text-[#a60424] underline text-4xl md:text-6xl">Clients served</h1>
+      <h3 className="text-black underline md:text-2xl">
         by our Core Team Members
       </h3>
       <Marquee gradient={false} speed={50} className="my-10 py-2">
@@ -31,7 +31,7 @@ export default function Clients() {
             key={idx}
             src={client.logo}
             alt="client logo"
-            className="h-12 md:h-24 mx-8 px-4 object-contain rounded-lg"
+            className="h-[6rem] md:h-24 p-4 mx-8 md:px-4 object-contain rounded-lg"
             style={{
               boxShadow:
                 "4px 0px 4px 0px #00000008, 0px 4px 4px 0px #00000024, 0px 0px 4px 0px #00000014",
