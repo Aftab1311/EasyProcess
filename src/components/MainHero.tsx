@@ -7,6 +7,7 @@ import MainContact from "./MainContact";
 import Clients from "./Clients";
 import { GoArrowRight } from "react-icons/go";
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import Portfolio from "./Portfolio";
 
 export default function MainHero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -531,6 +532,10 @@ export default function MainHero() {
           </div>
         </div>
       </div>
+
+      {/* section-8 */}
+
+      <Portfolio />
     </div>
   );
 }

@@ -11,7 +11,7 @@ function WhyUs({ }: Props) {
   return (
     <div>
       <section className="text-gray-600 body-font">
-        <div className="px-5 pt-24 mx-auto">
+        <div className="px-5 pt-16 md:pt-20 mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

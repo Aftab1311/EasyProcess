@@ -16,7 +16,7 @@ const items = [
 
 export default function Hero() {
     return (
-        <div className={`${poppins.className} mb-12 md:mb-5 mt-32`}>
+        <div className={`${poppins.className} mt-[91px] md:mt-[120px]`}>
             <AliceCarousel
                 autoPlay
                 autoPlayStrategy="none"
