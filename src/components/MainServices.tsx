@@ -8,41 +8,48 @@ import { FaClipboardList, FaFileInvoiceDollar } from "react-icons/fa";
 import { PiStrategyBold } from "react-icons/pi";
 import { IoStatsChart } from "react-icons/io5";
 import { HiMiniChevronDoubleRight } from "react-icons/hi2";
+import Link from "next/link";
 
 const services = [
   {
     title: "Fund Raising",
     icon: <RiPresentationFill />,
     bg: "/images/hero/ser1.jpg",
+    href: "/FundRaising",
     desc: "Secure the capital you need to grow and scale with EaseMyProcess. Our expert team provides strategic, data-driven solutions and end-to-end support to navigate the complex funding landscape, ensuring your business stands out to investors.",
   },
   {
     title: "Valuation",
     bg: "/images/hero/ser2.jpg",
+    href: "/Valuation",
     icon: <TfiBlackboard />,
     desc: "Unlock the true value of your business with our precise and investor-approved valuation services. Using multi-method approaches and realistic financial modeling, we deliver credible valuations that meet international standards and satisfy investor scrutiny.",
   },
   {
     title: "Pitch Deck & Modelling",
     bg: "/images/hero/ser3.jpg",
+    href: "/PitchDeck",
     icon: <FaClipboardList />,
     desc: "Captivate investors in just 3 minutes with a compelling pitch deck from EaseMyProcess. Our Wall Street-level presentations, comprehensive business plans, and advanced financial models increase your chances of securing funding by 75%.",
   },
   {
     title: "Accounting & Compliance",
     bg: "/images/hero/ser4.png",
+    href: "/Accounting",
     icon: <IoStatsChart />,
     desc: "Streamline yourfinancial processes and ensure compliance with EaseMyProcess. Save up to 60% on accounting costs with our professional. technology-driven services, from dailyrecord-keeping to comprehensive audit support and regulatory compliance.",
   },
   {
     title: "Financial Planning & Analysis",
     bg: "/images/hero/ser5.png",
+    href: "/FinancialPlanning",
     icon: <PiStrategyBold />,
     desc: "Transform your business with expert financial analysis and Excel automation from EaseMyProcess. Improve accuracy, boost efficiency by up to 80%, and make data-driven decisions with our tailored dashboards forecasting, and budgeting solutions.",
   },
   {
     title: "Deal Advisory & Implementation",
     bg: "/images/hero/ser6.png",
+    href: "/DealAdvisory",
     icon: <FaFileInvoiceDollar />,
     desc: "Maximize your investment opportunities and achieve successful deals with EaseMyProcess. We provide end-to-end deal advisory. strategic M&A structuring, and seamless transaction support, ensuring smart investments and strong exits.",
   },
@@ -62,6 +69,7 @@ export default function MainServices() {
             <ServiceCard
               key={index}
               title={service.title}
+              href={service.href}
               icon={service?.icon}
               bg={service?.bg}
               desc={service?.desc}
@@ -76,11 +84,13 @@ export default function MainServices() {
 function ServiceCard({
   icon,
   title,
+  href,
   bg,
   desc,
 }: {
   title: string;
   bg: string;
+  href: string;
   desc: string;
   icon: ReactNode;
 }) {
@@ -105,12 +115,11 @@ function ServiceCard({
           <span className="mx-6 md:my-2 text-sm underline text-center opacity-0 group-hover:opacity-100 transition group-hover:duration-100 group-hover:delay-300 group-hover:text-[12px] md:group-hover:text-sm">
             {desc}
           </span>
-          <a
-            href="/PitchDeck"
+          <Link href={href}
             className="bg-red-700 px-5 py-1 text-white mt-2 md:mt-6 rounded-3xl inline-flex items-center"
           >
             <HiMiniChevronDoubleRight size={24} />
-          </a>
+          </Link>
         </div>
       </div>
     </motion.div>
