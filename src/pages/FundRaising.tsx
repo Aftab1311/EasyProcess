@@ -10,6 +10,7 @@ import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
 import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
+import Funding from "@/components/Funding";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -44,7 +45,8 @@ const FundRaising = () => {
       <Navbar />
       <Hero />
       <WhyUs />
-      <HomeService />
+      <Funding />
+      {/* <HomeService /> */}
       <ContactUs />
       <Process />
       <Portfolio />
