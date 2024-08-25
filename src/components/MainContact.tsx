@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MainContact() {
   return (
-    <div className="bg-[url('/images/hero/dotbg2.png')] bg-cover bg-center px-2 md:px-0 ">
+    <div className="bg-[url('/images/hero/dotbg2.png')] bg-cover bg-center px-2 md:px-0 " id="contact-us">
       <Image
         src="/images/hero/smilemp.png"
         width={2000}

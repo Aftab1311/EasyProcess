@@ -197,8 +197,8 @@ export default function MainHero() {
 
       {/* section-7 */}
 
-      <div className="bg-[#f1f1f1]">
-        <div className="container mx-auto py-8 md:py-20 flex flex-col md:flex-row justify-evenly gap-10">
+      <div className="bg-[#f1f1f1]" id="about-us">
+        <div className="container mx-auto py-8 md:py-32 flex flex-col md:flex-row justify-evenly gap-10 ">
           <div className="w-[80%] md:w-1/2 ml-10 md:ml-20 flex flex-col justify-center gap-8">
             <div className="bg-white rounded-full h-16 w-16 flex justify-center items-center">
               <Image

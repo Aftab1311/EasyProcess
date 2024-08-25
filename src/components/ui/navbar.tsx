@@ -17,7 +17,7 @@ const navbarItems = [
   {
     id: 1,
     name: "About",
-    link: "/about",
+    link: "/#about-us",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const navbarItems = [
   {
     id: 3,
     name: "Services",
-    link: "/services",
+    link: "/#services",
   },
   {
     id: 4,
@@ -140,7 +140,7 @@ const Navbar = () => {
           ))}
           {/* Mobile Sponsor Button */}
           <Link
-            href="/contact"
+            href="#contact-us"
             className="text-center flex justify-center mx-auto my-2 md:mx-0 hidden"
           >
             <button className="relative inline-flex h-8 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-4 focus:ring-rose-600 focus:ring-offset-4 focus:ring-offset-slate-50">
@@ -154,7 +154,7 @@ const Navbar = () => {
 
         {/* Sponsor Button */}
         <Link
-          href="/contact"
+          href="#contact-us"
           className="text-center mx-auto mt-2 md:mx-0 hidden lg:flex"
         >
           <button className="relative inline-flex h-8 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 focus:ring-offset-slate-50">
