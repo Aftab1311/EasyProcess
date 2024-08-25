@@ -108,7 +108,7 @@ export default function MainHero() {
             <div className="border-[6px] md:border-[20px] border-black h-[700px] rounded-[80px] w-full flex flex-col md:flex-row overflow-hidden left-1/2 -translate-x-1/2  relative z-50 bg-white">
               <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img1.jpg')] bg-cover bg-center h-full w-full md:rounded-l-[80px] opacity-60 hover:scale-125 transition duration-1000"></div>
-                <div className="flex flex-col justify-center gap-6  absolute md:top-80 pl-8">
+                <div className="flex flex-col justify-center gap-2 md:gap-6  absolute top-1/2 -translate-y-1/2 md:top-1/2 pl-8">
                   <h2 className="text-xl md:text-4xl text-red-600 underline">
                     Quality Assurance
                   </h2>
@@ -122,13 +122,13 @@ export default function MainHero() {
               </div>
               <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img2.jpg')] bg-cover bg-center h-full opacity-30 hover:scale-125 transition duration-1000 "></div>
-                <div className="flex flex-col justify-center gap-6  absolute top-10 pl-8">
-                  <h2 className="text-4xl text-red-600 underline">
+                <div className="flex flex-col justify-center gap-2 md:gap-6  absolute top-1/2 -translate-y-1/2 right-4 md:right-0 md:top-28 md:pl-8">
+                  <h2 className="text-xl md:text-4xl text-red-600 underline">
                     Client Satisfaction
                   </h2>
                   <div>
-                    <h3 className="text-base text-black underline">98%</h3>
-                    <h2 className="text-3xl text-black underline">
+                    <h3 className="text-sm md:text-base text-black underline">98%</h3>
+                    <h2 className="text-xl md:text-3xl text-black underline">
                       Approval rate
                     </h2>
                   </div>
@@ -137,15 +137,15 @@ export default function MainHero() {
 
               <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img3.jpg')] bg-cover bg-center h-full opacity-30 hover:scale-125 transition duration-1000  "></div>
-                <div className="flex flex-col justify-center gap-6  absolute top-80 pl-8">
-                  <h2 className="text-4xl text-red-600 underline">
+                <div className="flex flex-col justify-center gap-3 md:gap-6  absolute top-1/2 -translate-y-1/2 md:top-3/4 pl-4 md:pl-8">
+                  <h2 className="text-xl md:text-4xl text-red-600 underline">
                     75% increase in deal closures
                   </h2>
                   <div>
-                    <h3 className="text-base text-black underline">
+                    <h3 className="text-sm md:text-base text-black underline">
                       with our investor ready
                     </h3>
-                    <h2 className="text-3xl text-black underline">
+                    <h2 className="text-base md:text-3xl text-black underline">
                       pitch-deck and financial models
                     </h2>
                   </div>
@@ -153,27 +153,27 @@ export default function MainHero() {
               </div>
               <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img4.jpg')] bg-cover bg-center h-full opacity-30  hover:scale-125 transition duration-1000 "></div>
-                <div className="flex flex-col justify-center gap-6  absolute top-10 pl-8">
-                  <h2 className="text-4xl text-red-600 underline">
+                <div className="flex flex-col justify-center gap-2 md:gap-6  absolute top-1/2 -translate-y-1/2 right-4 md:right-0 md:top-28 pl-4 md:pl-8">
+                  <h2 className="text-xl md:text-4xl text-red-600 underline">
                     Process efficiency
                   </h2>
                   <div>
-                    <h3 className="text-base text-black underline">
+                    <h3 className="text-sm md:text-base text-black underline">
                       save upto
                     </h3>
-                    <h2 className="text-3xl text-black underline">60%</h2>
+                    <h2 className="text-base md:text-3xl text-black underline">60%</h2>
                   </div>
                 </div>
               </div>
               <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img5.jpg')] bg-cover bg-center h-full rounded-r-[60px] opacity-30 hover:scale-125  transition duration-1000"></div>
-                <div className="flex flex-col justify-center gap-6  absolute bottom-20 pr-4 pl-4">
-                  <h2 className="text-4xl text-red-600 underline">
+                <div className="flex flex-col justify-center gap-2 md:gap-6  absolute top-1/2 -translate-y-1/2 md:top-3/4 pl-6 md:pr-4 md:pl-4">
+                  <h2 className="text-xl md:text-4xl text-red-600 underline">
                     Expert Team
                   </h2>
                   <div>
-                    <h3 className="text-base text-black underline">Led by</h3>
-                    <h2 className="text-3xl text-black underline">
+                    <h3 className="text-sm md:text-base text-black underline">Led by</h3>
+                    <h2 className="text-base md:text-3xl text-black underline">
                       Experienced platforms
                     </h2>
                   </div>
