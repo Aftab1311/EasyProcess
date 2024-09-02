@@ -13,7 +13,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.9",
     "mini-svg-data-uri": "^1.4.4",
-    "next": "^14.2.3",
+    "next": "^14.2.7",
     "react": "^18.3.1",
     "react-alice-carousel": "^2.9.1",
     "react-calendly": "^4.3.0",

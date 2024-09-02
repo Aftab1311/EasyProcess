@@ -22,9 +22,7 @@ export default function Clients() {
   return (
     <div className="w-full container mx-auto py-20 flex flex-col justify-center items-center gap-4">
       <h1 className="text-[#a60424] underline text-4xl md:text-6xl">Clients served</h1>
-      <h3 className="text-black underline md:text-2xl">
-        by our Core Team Members
-      </h3>
+      
       <Marquee gradient={false} speed={50} className="my-10 py-2">
         {clients.map((client, idx) => (
           <Image

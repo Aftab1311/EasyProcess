@@ -86,7 +86,7 @@ export default function Portfolio() {
             style={{ transition: "1s" }}
           >
             <div className="absolute right-2 top-2 md:right-6 -rotate-90 group-hover:rotate-0" style={{ transition: "1s" }}><TfiArrowTopRight size={24} /></div>
-            <h1 className="text-base md:text-xl underline">Valuation</h1>
+            <h1 className="text-base md:text-xl underline">Valuation Summary</h1>
             <h3 className="text-sm md:text-base underline">Project was based on valuation and information.</h3>
           </div>
         </div>
