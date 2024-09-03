@@ -209,8 +209,8 @@ export default function MainHero() {
                 className="hover:scale-110"
               />
             </div>
-            <h1 className="text-xl lg:text-4xl underline">
-              We are strong team who brings innovative ideas into production.
+            <h1 className="text-xl lg:text-4xl">
+            We are a strong team that brings innovative ideas into production.
             </h1>
           </div>
 
@@ -225,6 +225,7 @@ export default function MainHero() {
                   className="hover:scale-110 transition duration-700"
                 />
                 <div className="absolute bottom-36 md:bottom-40 left-1/2  -translate-x-1/2 w-[40px] md:w-[60px] h-[40px] md:h-[60px] rounded-full bg-black group-hover:bg-[#007ab9] transition duration-700 cursor-pointer  bg-opacity-35 flex items-center justify-center">
+                <a href="https://www.linkedin.com/in/anchal-singhal-248904122/">
                   <Image
                     src="/images/hero/linkedin.png"
                     alt="LinkedIn Icon"
@@ -232,13 +233,14 @@ export default function MainHero() {
                     height={40}
                     className="w-[20px] md:w-[40px] h-[20px] md:h-[40px] "
                   />
+                  </a>
                 </div>
               </div>
 
-              <h1 className="text-xl underline text-center text-[#d2042d] font-bold">
+              <h1 className="text-xl text-center text-[#d2042d] font-bold">
                 Anchal Singhal
               </h1>
-              <h2 className="text-[#838080] font-bold underline">Co-founder</h2>
+              <h2 className="text-[#838080] font-bold ">Co-founder</h2>
               <button
                 className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline"
                 onClick={handleOpenModal}
@@ -377,7 +379,7 @@ export default function MainHero() {
             <div className=" flex flex-col justify-center items-center gap-2 relative group">
               <div className="overflow-hidden">
                 <Image
-                  src="/images/hero/anchal2.png"
+                  src="/images/hero/gujrani.png"
                   alt="quote"
                   width={450}
                   height={300}
@@ -395,10 +397,10 @@ export default function MainHero() {
                   </a>
                 </div>
               </div>
-              <h1 className="w-2/3 text-xl underline text-center text-[#d2042d] font-bold">
+              <h1 className="w-2/3 text-xl text-center text-[#d2042d] font-bold">
                 Anant Gujrani
               </h1>
-              <h2 className="text-[#838080] font-bold underline">Co-founder</h2>
+              <h2 className="text-[#838080] font-bold">Co-founder</h2>
               <button
                 className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline"
                 onClick={handleOpenModal2}
@@ -417,7 +419,7 @@ export default function MainHero() {
                     <div className="flex flex-col md:flex-row gap-2 md:gap-8">
                       <div className="w-full md:w-2/5 flex md:justify-end">
                         <img
-                          src="/images/hero/anchal2.png"
+                          src="/images/hero/gujrani.png"
                           alt="About Us"
                           className="w-[200px] md:w-[300px] h-[250px] md:h-[400px]"
                         />
@@ -513,7 +515,7 @@ export default function MainHero() {
                             <li className="list-disc  ml-4 underline">Accounting</li>
                             <li className="list-disc  ml-4 underline">Advance Excel</li>
                             <li className="list-disc  ml-4 underline">
-                              Datq Analysis/ Visualization
+                              Data Analysis/ Visualization
                             </li>
                             <li className="list-disc  ml-4 underline">
                               Financial Reporting

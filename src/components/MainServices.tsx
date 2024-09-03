@@ -12,11 +12,11 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Fund Raising",
+    title: "Raisers of Funds",
     icon: <RiPresentationFill />,
     bg: "/images/hero/ser1.jpg",
     href: "/FundRaising",
-    desc: "Secure the capital you need to grow and scale with EaseMyProcess. Our expert team provides strategic, data-driven solutions and end-to-end support to navigate the complex funding landscape, ensuring your business stands out to investors.",
+    desc: "Are You Prepared to Expand Your Enterprise? We at EaseMyProcess assist you in obtaining the funding you require to expand your enterprise. Regardless We are here to help you achieve no matter what level you're at.",
   },
   {
     title: "Valuation",
@@ -112,7 +112,7 @@ function ServiceCard({
           <h3 className="text-3xl text-red-600 font-semibold ml-4 py-4 text-center mt-4 group-hover:mt-16 md:group-hover:mt-24 group-hover:text-xl">
             {title}
           </h3>
-          <span className="mx-6 md:my-2 text-sm underline text-center opacity-0 group-hover:opacity-100 transition group-hover:duration-100 group-hover:delay-300 group-hover:text-[12px] md:group-hover:text-sm">
+          <span className="mx-6 md:my-2 text-sm text-center opacity-0 group-hover:opacity-100 transition group-hover:duration-100 group-hover:delay-300 group-hover:text-[12px] md:group-hover:text-sm">
             {desc}
           </span>
           <Link href={href}

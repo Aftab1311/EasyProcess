@@ -115,7 +115,7 @@ export default function FAQs({ }: Props) {
             key={index}
           >
             <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-              <h2 className="text-sm md:text-xl underline font-medium text-gray-900">
+              <h2 className="text-sm md:text-xl font-medium text-gray-900">
                 {qa.question}
               </h2>
 

@@ -51,21 +51,21 @@ const Navbar = () => {
   return (
     <div className="fixed w-full z-50">
       <div className="w-full text-gray-300 bg-black bg-opacity-90 backdrop-blur-md py-1 hidden md:flex justify-around items-center">
-        <div className="flex justify-start items-center">
-          <div className="flex justify-start items-center gap-2">
-            <MdLocationPin className=" text-3xl" />
-            <p className="w-1/2 underline text-sm">
-              A1 Tower, Sohna Road Level 9, Spaze i-Tech Park, Sector 49,
-              Gurugram, Haryana 122018
-            </p>
-            <div className="flex justify-start items-center gap-2">
-              <MdAlternateEmail className=" text-3xl" />
-              <p className="max-w-lg underline text-sm">
-                info@easemyprocess.com
+      <div className="flex flex-col items-start gap-4">
+        <div className="flex items-center gap-2">
+           <MdLocationPin className="text-3xl" />
+              <p className="text-sm">
+              A1 Tower, Sohna Road Level 9, Spaze i-Tech Park, Sector 49, Gurugram, Haryana 122018
               </p>
-            </div>
-          </div>
         </div>
+       <div className="flex items-center gap-2">
+           <MdAlternateEmail className="text-3xl" />
+          <p className="text-sm">
+           info@easemyprocess.com
+          </p>
+       </div>
+     </div>
+
         <div className="flex justify-center items-center gap-2">
           <FaFacebookF className="text-3xl text-white" />
           <FaInstagram className="text-3xl text-white" />

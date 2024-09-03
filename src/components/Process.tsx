@@ -3,12 +3,12 @@ import Heading from './ui/Heading';
 
 export default function Process() {
     return (
-        <section className="py-12">
+        <section className="py-12 bg-white">
             <Heading>
                 Process
             </Heading>
-            <Image src="/process.svg" width={2000} height={2000} alt="Process" className="w-full py-12 md:px-12 md:flex hidden" />
-            <Image src="/processmobile.svg" width={2000} height={2000} alt="Process" className="w-full py-12 px-4 md:hidden" />
+            <Image src= "/easymyprocess.gif" width={2000} height={2000} alt="Process" className=" w-full h-full py-12  md:px-12 md:flex hidden bg-white" />
+            <Image src= "/easymyprocess.gif" width={2000} height={2000} alt="Process" className=" w-full h-full py-12  px-4 md:hidden bg-white" />
         </section>
     )
 }
