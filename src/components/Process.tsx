@@ -9,7 +9,7 @@ export default function Process() {
                 Process
             </Heading>
             <Image src= "/main.gif" width={2000} height={2000} alt="Process" className=" w-full h-full py-12  md:px-12 md:flex hidden bg-white" />
-            <Image src= "/main.gif" width={2000} height={2000} alt="Process" className=" w-full h-full py-12  px-4 md:hidden bg-white" />
+            <Image src= "/main.gif" width={2000} height={2000} alt="Process" className=" w-full h-full py-2  px-4 md:hidden bg-white" />
         </section>
     )
 }
