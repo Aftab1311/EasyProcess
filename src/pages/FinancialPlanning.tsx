@@ -10,6 +10,8 @@ import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
 import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
+import { financialPlanningFaqs } from "@/constants/faqs";
+import { financialItems } from "@/constants/carousel";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -42,13 +44,27 @@ const FinancialPlanning = () => {
         <title>Ease My Process</title>
       </Head>
       <Navbar />
-      <Hero />
-      <WhyUs />
+      <Hero items={financialItems} />
+      <WhyUs
+        heading="Just Why Opt for EaseMyProcess?"
+        subheading="We offer unique solutions tailored to your needs."
+        imageSrc="/whyUs.png"
+        firstTitle="Save Time:"
+        firstDescription="Replicated duties take up a lot of an employee's time. Each month, our tools save more than 20 hours."
+        secondTitle="Boost Accuracy:"
+        secondDescription="Obtain accurate financial data and personalized dashboards."
+        thirdTitle="Boost Efficiency"
+        thirdDescription="With our Excel training, team productivity can rise by as much as 60%."
+        fourthTitle="Make Wise Choices:"
+        fourthDescription="Examine expenses to develop more effective pricing plans."
+        fifthTitle="Grow Quicker:"
+        fifthDescription="To increase sales and profits, comprehend pricing, rivalry, and customer profitability."
+      />
       <HomeService />
       <ContactUs />
       <Process />
       <Portfolio />
-      <FAQs />
+      <FAQs FaqTableData={financialPlanningFaqs} heading="FAQs" />
       <Footer />
     </main>
   );

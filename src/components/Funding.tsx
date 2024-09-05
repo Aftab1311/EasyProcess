@@ -1,6 +1,6 @@
 
 import { IoStatsChart } from "react-icons/io5";
-import Image from "next/image";
+import Image from "next/image"; 
 
 
 export default function Funding() {
@@ -56,10 +56,12 @@ export default function Funding() {
                   
                 </div>
               </div>
+              
             ))}
           
          </div>
        </div>
         </div>
+       
     );
     }

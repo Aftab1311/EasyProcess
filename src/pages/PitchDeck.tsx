@@ -10,6 +10,8 @@ import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
 import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
+import { homeFaqs, pitchDeckFaqs } from "@/constants/faqs";
+import { pitchItems } from "@/constants/carousel";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -42,13 +44,26 @@ const PitchDeck = () => {
         <title>Ease My Process</title>
       </Head>
       <Navbar />
-      <Hero />
-      <WhyUs />
+      <Hero items={pitchItems} />
+      <WhyUs
+        heading="Why Decide on Us?"
+        subheading="We offer unique solutions tailored to your needs."
+        imageSrc="/whyUs.png"
+        firstTitle="Increase Your Chances by 75%:"
+        firstDescription="We Draft Excellent Business Plans, Financial Models, Pitch Decks, and Teasers. Our team of experts consists of consultants, experts in PowerPoint, designers, and advisors on branding."
+        secondTitle="Market Research: "
+        secondDescription="Our team conducts comprehensive studies on market size, trends, and rivals."
+        thirdTitle="Comprehensive Financial Models:"
+        thirdDescription="Our forecasts and insights are explained in detail.
+Years of Experience: We've been creating presentations that wow investors, draw in clients, and advance your business for more than ten years. 
+"
+      />
+
       <HomeService />
       <ContactUs />
       <Process />
       <Portfolio />
-      <FAQs />
+      <FAQs FaqTableData={homeFaqs} heading="FAQs" />
       <Footer />
     </main>
   );

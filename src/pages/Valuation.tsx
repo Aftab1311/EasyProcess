@@ -10,13 +10,15 @@ import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
 import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
+import { valuationFaqs } from "@/constants/faqs";
+import { valuationItems } from "@/constants/carousel";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400"],
 });
 
-const Valuation= () => {
+const Valuation = () => {
   return (
     <main
       className={`flex flex-col overflow-x-hidden bg-white min-h-screen w-full ${poppins.className}`}
@@ -42,13 +44,25 @@ const Valuation= () => {
         <title>Ease My Process</title>
       </Head>
       <Navbar />
-      <Hero />
-      <WhyUs />
+      {/* <Hero /> */}
+      <Hero items={valuationItems} />
+      <WhyUs
+        heading="Why Opt for Us?"
+        subheading="Our company using tried-and-true techniques."
+        imageSrc="/whyUs.png"
+        firstTitle="Data-Driven Insights:"
+        firstDescription="Extensive investigation and analysis form the basis of our valuations.
+Our team comprises experts with over ten years of experience working in leading consulting organizations.
+"
+        secondTitle="Reliable Reports Approved by Big Accounting Firms:"
+        secondDescription="This indicates that investors trust our reports."
+      />
+
       <HomeService />
       <ContactUs />
       <Process />
       <Portfolio />
-      <FAQs />
+      <FAQs FaqTableData={valuationFaqs} heading="FAQs" />
       <Footer />
     </main>
   );

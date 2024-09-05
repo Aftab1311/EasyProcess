@@ -4,6 +4,7 @@ import FAQs from "@/components/ui/FAQs";
 import Navbar from "@/components/ui/navbar";
 import Head from "next/head";
 import MainHero from "@/components/MainHero";
+import { homeFaqs } from "@/constants/faqs";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -38,7 +39,7 @@ export default function Home() {
       <Navbar />
       <MainHero />
       {/* <Statistics /> */}
-      <FAQs />
+      <FAQs FaqTableData={homeFaqs} />
 
       {/* <Testimonials /> */}
       {/* <Calendly /> */}
