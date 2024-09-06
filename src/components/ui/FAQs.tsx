@@ -69,7 +69,7 @@ export default function FAQs({ FaqTableData = [], heading }: FAQProps) {
       >
         <p
           style={{
-            color: "#2a6ab4",
+            color: "#d2042d",
             cursor: "pointer",
             marginTop: "3rem",
             font: "normal normal 500 1.6rem/2rem Inter",
