@@ -24,7 +24,7 @@ export default function Footer({ }: Props) {
 
       <div className="flex flex-col md:flex-row justify-between text-white text-sm">
         <div className="flex flex-col justify-start items-center md:items-start gap-y-3 underline ">
-          <Link href="/#about">
+          <Link href="/#about-us">
             About
           </Link>
           <Link href="/">
