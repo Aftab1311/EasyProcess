@@ -18,17 +18,18 @@ const Process = () => {
             justifyContent: "center",
             fontSize: "3rem",
             fontWeight: "bold",
+            color:"#d2042d"
           }}
         >
           Process
         </div>
         <div>
           <Image
-            src="/Process Model.png"
+            src="/main.gif"
             alt="Process"
-            width={100}
-            height={100}
-            style={{ width: "30rem", height: "30rem" }}
+            width={2000}
+            height={2000}
+            style={{ width: "100%", height: "100%" }}
           />
         </div>
       </div>
