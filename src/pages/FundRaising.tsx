@@ -11,6 +11,8 @@ import Portfolio from "@/components/Portfolio";
 import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
 import Funding from "@/components/Funding";
+import { fundingItems } from "@/constants/carousel";
+import { fundFaqs } from "@/constants/faqs";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -43,14 +45,24 @@ const FundRaising = () => {
         <title>Ease My Process</title>
       </Head>
       <Navbar />
-      <Hero />
-      <WhyUs />
+      <Hero items={fundingItems} />
+      <WhyUs
+        heading="Why Choose Us?"
+        subheading="Many companies require capital, but our approach is distinct:"
+        imageSrc="/whyUs.png"
+        firstTitle="Astute Approach:"
+        firstDescription="We employ the most effective techniques for your requirements."
+        secondTitle="Fact-driven approaches:"
+        secondDescription="Our decision-making relies on numerical data."
+        thirdTitle="Whole Assistance:"
+        thirdDescription="We provide support at every stage."
+      />
+
       <Funding />
-      {/* <HomeService /> */}
       <ContactUs />
       <Process />
       <Portfolio />
-      <FAQs />
+      <FAQs FaqTableData={fundFaqs} heading="FAQs" />
       <Footer />
     </main>
   );

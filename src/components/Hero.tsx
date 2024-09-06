@@ -2,19 +2,18 @@ import React from "react";
 import { Poppins } from "next/font/google";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const poppins = Poppins({
     subsets: ['latin'],
     weight: ["100", "300", "400", "500", "700", "900"],
-})
+});
 
-const items = [
-    <div className="item" data-value="1"><Image src='/hero/1.svg' alt='offer' width={2000} height={2000} className={`object-cover`} /></div>,
-    <div className="item" data-value="2"><Image src='/hero/2.svg' alt='offer' width={2000} height={2000} className={`object-cover`} /></div>,
-];
+interface HeroProps {
+    items: JSX.Element[];
+}
 
-export default function Hero() {
+const Hero: React.FC<HeroProps> = ({ items }) => {
     return (
         <div className={`${poppins.className} mt-[91px] md:mt-[120px]`}>
             <AliceCarousel
@@ -25,12 +24,12 @@ export default function Hero() {
                 infinite
                 touchTracking={false}
                 disableButtonsControls
-            
                 items={items}
                 paddingLeft={2}
                 paddingRight={2}
             />
         </div>
-
-    )
+    );
 }
+
+export default Hero;
