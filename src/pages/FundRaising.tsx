@@ -50,6 +50,7 @@ const FundRaising = () => {
         heading="Why Choose Us?"
         subheading="Many companies require capital, but our approach is distinct:"
         imageSrc="/FundRaisingwhyus.png"
+
         firstTitle="Astute Approach:"
         firstDescription="We employ the most effective techniques for your requirements."
         secondTitle="Fact-driven approaches:"

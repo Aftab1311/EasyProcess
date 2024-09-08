@@ -45,7 +45,10 @@ function WhyUs({
             viewport={{ once: true }}
             className="px-5 flex flex-col text-left w-full"
           >
+            <div className="flex justify-center w-full">
             <Heading>{heading}</Heading>
+            </div>
+           
 
             <p className="leading-relaxed text-lg mt-3 max-w-3xl mx-auto text-center font-bold">
               {subheading}
@@ -68,10 +71,10 @@ function WhyUs({
           >
             <Image
               src={imageSrc}
-              width={300}
-              height={300}
+              width={400}
+              height={400}
               alt="Why Us"
-              className="w-[300px]"
+              className="w-[500px]"
             />
           </motion.div>
 
@@ -80,17 +83,17 @@ function WhyUs({
             <p className="mt-2">{secondDescription}</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center mt-10">
+        <div className="flex flex-col md:flex-row items-center justify-center md:mb-10">
 
-        <div className="text-center p-4 mt-10">
+        <div className="text-center p-4 md:mt-10">
           <p className="font-bold text-lg">{thirdTitle}</p>
           <p className="mt-2">{thirdDescription}</p>
         </div>
-        <div className="text-center p-4 mt-10">
+        <div className="text-center p-4 md:mt-10">
           <p className="font-bold text-lg">{fourthTitle}</p>
           <p className="mt-2">{fourthDescription}</p>
         </div>
-        <div className="text-center p-4 mt-10">
+        <div className="text-center p-4 md:mt-10">
           <p className="font-bold text-lg">{fifthTitle}</p>
           <p className="mt-2">{fifthDescription}</p>
         </div>
