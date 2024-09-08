@@ -49,6 +49,7 @@ const FinancialPlanning = () => {
         heading="Just Why Opt for EaseMyProcess?"
         subheading="We offer unique solutions tailored to your needs."
         imageSrc="/FinancialPlanningWhyus.png"
+
         firstTitle="Save Time:"
         firstDescription="Replicated duties take up a lot of an employee's time. Each month, our tools save more than 20 hours."
         secondTitle="Boost Accuracy:"

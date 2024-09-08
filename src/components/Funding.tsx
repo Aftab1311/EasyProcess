@@ -36,7 +36,7 @@ export default function Funding() {
         
          <div className="w-full py-10 bg-[#a60424]">
        <div className="container mx-auto">
-            <h1 className="w-full text-3xl md:text-5xl text-white font-bold flex justify-center mb-10">
+            <h1 className="text-3xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
             Types of Financial Support
             </h1>
          <div className="grid grid-cols-1 md:grid-cols-3">

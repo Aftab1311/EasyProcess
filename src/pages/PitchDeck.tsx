@@ -49,6 +49,7 @@ const PitchDeck = () => {
         heading="Why Decide on Us?"
         subheading="We offer unique solutions tailored to your needs."
         imageSrc="/pitchDeck.png"
+
         firstTitle="Increase Your Chances by 75%:"
         firstDescription="We Draft Excellent Business Plans, Financial Models, Pitch Decks, and Teasers. Our team of experts consists of consultants, experts in PowerPoint, designers, and advisors on branding."
         secondTitle="Market Research: "
