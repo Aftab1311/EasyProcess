@@ -139,10 +139,12 @@ export const accountingItems = [
     <div
       className="absolute md:top-[30%] md:left-[40rem] p-4 text-white top-[12%] left-[10rem]"
     >
+
       <div className="text-base md:text-[2.5rem] font-bold ">
         Boost Your Financial Health <br />
         <span className="text-[#D2042D]">
           with Expert Accounting Solutions <br /> from EaseMyProcess!
+
         </span>
       </div>
     </div>
@@ -224,9 +226,11 @@ export const financialItems = [
     <div
       className="absolute md:top-[30%] md:left-[40rem] p-4 text-white top-[12%] left-[10rem]"
     >
+
       <div className="text-base md:text-[2.5rem] font-bold">
         Improve Your Company Using Excel Tools and <br />
         <span className="text-[#D2042D]"> Astute Financial Analysis </span>
+
       </div>
     </div>
   </div>,
