@@ -3,6 +3,8 @@ import { Poppins } from "next/font/google";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import Image from "next/image";
+
+
 const poppins = Poppins({
     subsets: ['latin'],
     weight: ["100", "300", "400", "500", "700", "900"],

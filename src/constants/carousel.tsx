@@ -183,9 +183,8 @@ export const accountingItems = [
       }}
     >
       <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-        Boost Your Financial Health <br />
-        <span style={{ color: "#D2042D" }}>
-          with Expert Accounting Solutions <br />
+        Boost Your Financial Health <br /> with Expert Accounting<br />
+        <span style={{ color: "#D2042D" }}> Solutions
           from EaseMyProcess!
         </span>
       </div>
@@ -297,9 +296,9 @@ export const financialItems = [
       }}
     >
       <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-        Improve Your Company Using Excel Tools and <br/> {" "}
+        Improve Your Company <br/> {" "}
         <span style={{ color: "#D2042D" }}>
-        Astute Financial Analysis 
+        Using Excel Tools and <br/> Astute Financial Analysis 
         </span>
       </div>
     </div>
