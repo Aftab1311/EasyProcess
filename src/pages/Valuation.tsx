@@ -49,7 +49,7 @@ const Valuation = () => {
       <WhyUs
         heading="Why Opt for Us?"
         subheading="Our company using tried-and-true techniques."
-        imageSrc="/whyUs.png"
+        imageSrc="/valuationWhyUs.png"
         firstTitle="Data-Driven Insights:"
         firstDescription="Extensive investigation and analysis form the basis of our valuations.
 Our team comprises experts with over ten years of experience working in leading consulting organizations.

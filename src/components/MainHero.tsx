@@ -38,7 +38,7 @@ export default function MainHero() {
               Ease My Process.
             </h1>
             <h3 className="text-xl md:text-4xl font-semibold underline">
-              Your Partner for Strategic Growth & Seamless Operations.
+              Your Business Growth Partner Inventing Your Growth Strategy
             </h3>
             <button className="max-w-[150px] bg-white py-2 px-2 text-red-500 underline rounded-md">
               Contact Us
