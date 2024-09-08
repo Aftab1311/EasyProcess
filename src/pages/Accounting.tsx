@@ -48,7 +48,8 @@ const Accounting = () => {
       <WhyUs
         heading="Just Why Opt for EaseMyProcess?"
         subheading="We offer unique solutions tailored to your needs."
-        imageSrc="/bulb-main.svg"
+        imageSrc="/AccountingwhyUs.png"
+
         firstTitle="Save Money:"
         firstDescription="With astute bookkeeping, you can reduce your accounting and compliance expenses by 60%."
         secondTitle="Accurate Records:"

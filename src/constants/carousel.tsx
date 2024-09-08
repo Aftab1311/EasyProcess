@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 export const fundingItems = [
   <div>
     <Image
@@ -13,16 +12,14 @@ export const fundingItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
     >
       <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-        Your Business,{" "}
-        <span style={{ color: "#D2042D" }}>
-          Our Priority <br /> - Get Funded Today!
-        </span>
+         Your Business,{" "}
+        <span style={{ color: "#D2042D" }}>Our Priority <br/>Get Funded Today</span>
       </div>
     </div>
   </div>,
@@ -38,7 +35,7 @@ export const fundingItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
@@ -53,7 +50,10 @@ export const fundingItems = [
       </div>
     </div>
   </div>,
-];
+
+
+  ];
+
 
 export const valuationItems = [
   <div>
@@ -68,14 +68,14 @@ export const valuationItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
     >
       <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-        Turn Data into Value—Get Your Business{" "}
-        <span style={{ color: "#D2042D" }}>Appraised with EaseMyProcess!</span>
+        Turn Data into Value—Get {" "}
+        <span style={{ color: "#D2042D" }}> Your Business Appraised with EaseMyProcess!</span>
       </div>
     </div>
   </div>,
@@ -91,7 +91,7 @@ export const valuationItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
@@ -121,7 +121,7 @@ export const pitchItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
@@ -147,7 +147,7 @@ export const pitchItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
@@ -177,7 +177,7 @@ export const accountingItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
@@ -203,7 +203,7 @@ export const accountingItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
@@ -233,7 +233,7 @@ export const dealItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
@@ -261,7 +261,7 @@ export const dealItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
@@ -291,16 +291,15 @@ export const financialItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}
     >
       <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-        Improve Your Company Using{" "}
+        Improve Your Company Using Excel Tools and <br/> {" "}
         <span style={{ color: "#D2042D" }}>
-          Excel Tools and Astute Financial Analysis Just Why Opt for
-          EaseMyProcess?
+        Astute Financial Analysis 
         </span>
       </div>
     </div>
@@ -317,7 +316,7 @@ export const financialItems = [
       style={{
         position: "absolute",
         top: "30%",
-        left: "44rem",
+        left: "50rem",
         padding: "1rem",
         color: "white",
       }}

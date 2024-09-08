@@ -48,7 +48,9 @@ const DealAdvisory = () => {
       <WhyUs
         heading="Why Opt for Us?"
         subheading="We offer unique solutions tailored to your needs."
-        imageSrc="/bulb-main.svg"
+
+        imageSrc="/dealAdvisoryWhyUS.png"
+
         firstTitle="Skilled Guidance:"
         firstDescription="Provided by a former Big 4 consultant with extensive knowledge of large-scale transactions in India."
         secondTitle=" Full-Service Advisory:"
