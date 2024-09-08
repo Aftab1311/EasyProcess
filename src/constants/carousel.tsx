@@ -1,6 +1,7 @@
 import Image from "next/image";
+
 export const fundingItems = [
-  <div>
+  <div className="relative">
     <Image
       src="/slider1.png"
       alt="offer"
@@ -9,77 +10,17 @@ export const fundingItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[40%] md:left-[40rem] p-4 text-white top-[10%] left-[10rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-         Your Business,{" "}
-        <span style={{ color: "#D2042D" }}>Our Priority <br/>Get Funded Today</span>
-      </div>
-    </div>
-  </div>,
-  <div>
-    <Image
-      src="/slider2.png"
-      alt="offer"
-      width={2000}
-      height={2000}
-      className={`object-cover`}
-    />
-    <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
-    >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#000000" }}>
-        Did You Know?
-        <br />
-        <span style={{ color: "#D2042D" }}>
-          Investors Spend 3 minutes
-          <br /> Deciding Your Fate
+      <div className="text-xl md:text-[2.5rem] font-bold">
+        Your Business,{" "}
+        <span className="text-[#D2042D]">
+          Our Priority <br /> Get Funded Today
         </span>
       </div>
     </div>
   </div>,
-
-
-  ];
-
-
-export const valuationItems = [
-  <div>
-    <Image
-      src="/slider1.png"
-      alt="offer"
-      width={2000}
-      height={2000}
-      className={`object-cover`}
-    />
-    <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
-    >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-        Turn Data into Value—Get {" "}
-        <span style={{ color: "#D2042D" }}> Your Business Appraised with EaseMyProcess!</span>
-      </div>
-    </div>
-  </div>,
-  <div>
+  <div className="relative">
     <Image
       src="/slider2.png"
       alt="offer"
@@ -88,20 +29,55 @@ export const valuationItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[30%] md:left-[50rem] p-4 text-white top-[10%] left-[12rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#000000" }}>
+      <div className="text-base md:text-[2.5rem] font-bold text-black">
         Did You Know?
         <br />
-        <span style={{ color: "#D2042D" }}>
-          Investors Spend 3 minutes
-          <br /> Deciding Your Fate
+        <span className="text-[#D2042D]">
+          Investors Spend 3 minutes <br /> Deciding Your Fate
+        </span>
+      </div>
+    </div>
+  </div>,
+];
+
+export const valuationItems = [
+  <div className="relative">
+    <Image
+      src="/slider1.png"
+      alt="offer"
+      width={2000}
+      height={2000}
+      className={`object-cover`}
+    />
+    <div
+      className="absolute md:top-[40%] md:left-[38rem] p-4 text-white top-[14%] left-[10rem]"
+    >
+      <div className="text-base md:text-[2.5rem] font-bold">
+        Turn Data into Value—Get{" "}
+        <span className="text-[#D2042D]">
+          Your Business Appraised with EaseMyProcess!
+        </span>
+      </div>
+    </div>
+  </div>,
+  <div className="relative">
+    <Image
+      src="/slider2.png"
+      alt="offer"
+      width={2000}
+      height={2000}
+      className={`object-cover`}
+    />
+    <div
+      className="absolute md:top-[40%] md:left-[50rem] p-4 text-white top-[12%] left-[12rem]"
+    >
+      <div className="text-base md:text-[2.5rem] font-bold text-black">
+        Did You Know?
+        <br />
+        <span className="text-[#D2042D]">
+          Investors Spend 3 minutes <br /> Deciding Your Fate
         </span>
       </div>
     </div>
@@ -109,7 +85,7 @@ export const valuationItems = [
 ];
 
 export const pitchItems = [
-  <div>
+  <div className="relative">
     <Image
       src="/slider1.png"
       alt="offer"
@@ -118,24 +94,18 @@ export const pitchItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[30%] md:left-[50rem] p-4 text-white top-[12%] left-[10rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+      <div className="text-base md:text-[2.5rem] font-bold">
         Stand Out from the Crowd <br />
-        <span style={{ color: "#D2042D" }}>
+        <span className="text-[#D2042D]">
           Get a Pitch Deck That <br />
           Makes an Impact!
         </span>
       </div>
     </div>
   </div>,
-  <div>
+  <div className="relative">
     <Image
       src="/slider2.png"
       alt="offer"
@@ -144,20 +114,13 @@ export const pitchItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[30%] md:left-[50rem] p-4 text-white top-[12%] left-[12rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#000000" }}>
+      <div className="text-base md:text-[2.5rem] font-bold text-black">
         Did You Know?
         <br />
-        <span style={{ color: "#D2042D" }}>
-          Investors Spend 3 minutes
-          <br /> Deciding Your Fate
+        <span className="text-[#D2042D]">
+          Investors Spend 3 minutes <br /> Deciding Your Fate
         </span>
       </div>
     </div>
@@ -165,7 +128,7 @@ export const pitchItems = [
 ];
 
 export const accountingItems = [
-  <div>
+  <div className="relative">
     <Image
       src="/slider1.png"
       alt="offer"
@@ -174,23 +137,19 @@ export const accountingItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[30%] md:left-[40rem] p-4 text-white top-[12%] left-[10rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-        Boost Your Financial Health <br /> with Expert Accounting<br />
-        <span style={{ color: "#D2042D" }}> Solutions
-          from EaseMyProcess!
+
+      <div className="text-base md:text-[2.5rem] font-bold ">
+        Boost Your Financial Health <br />
+        <span className="text-[#D2042D]">
+          with Expert Accounting Solutions <br /> from EaseMyProcess!
+
         </span>
       </div>
     </div>
   </div>,
-  <div>
+  <div className="relative">
     <Image
       src="/slider2.png"
       alt="offer"
@@ -199,20 +158,13 @@ export const accountingItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[30%] md:left-[50rem] p-4 text-white top-[12%] left-[12rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#000000" }}>
+      <div className="text-base md:text-[2.5rem] font-bold text-black">
         Did You Know?
         <br />
-        <span style={{ color: "#D2042D" }}>
-          Investors Spend 3 minutes
-          <br /> Deciding Your Fate
+        <span className="text-[#D2042D]">
+          Investors Spend 3 minutes <br /> Deciding Your Fate
         </span>
       </div>
     </div>
@@ -220,7 +172,7 @@ export const accountingItems = [
 ];
 
 export const dealItems = [
-  <div>
+  <div className="relative">
     <Image
       src="/slider1.png"
       alt="offer"
@@ -229,26 +181,18 @@ export const dealItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[30%] md:left-[40rem] p-4 text-white top-[14%] left-[10rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-        Providing Expert Deal Advice
-        <br />
-        <span style={{ color: "#D2042D" }}>
-          and Startup Solutions to
-          <br />
+      <div className="text-[14px] md:text-[2.5rem] font-bold">
+        Providing Expert Deal Advice <br />
+        <span className="text-[#D2042D]">
+          and Startup Solutions to <br />
           Help Your Business
         </span>
       </div>
     </div>
   </div>,
-  <div>
+  <div className="relative">
     <Image
       src="/slider2.png"
       alt="offer"
@@ -257,20 +201,13 @@ export const dealItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[30%] md:left-[50rem] p-4 text-white top-[12%] left-[12rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#000000" }}>
+      <div className="text-base md:text-[2.5rem] font-bold text-black">
         Did You Know?
         <br />
-        <span style={{ color: "#D2042D" }}>
-          Investors Spend 3 minutes
-          <br /> Deciding Your Fate
+        <span className="text-[#D2042D]">
+          Investors Spend 3 minutes <br /> Deciding Your Fate
         </span>
       </div>
     </div>
@@ -278,7 +215,7 @@ export const dealItems = [
 ];
 
 export const financialItems = [
-  <div>
+  <div className="relative">
     <Image
       src="/slider1.png"
       alt="offer"
@@ -287,23 +224,17 @@ export const financialItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[30%] md:left-[40rem] p-4 text-white top-[12%] left-[10rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-        Improve Your Company <br/> {" "}
-        <span style={{ color: "#D2042D" }}>
-        Using Excel Tools and <br/> Astute Financial Analysis 
-        </span>
+
+      <div className="text-base md:text-[2.5rem] font-bold">
+        Improve Your Company Using Excel Tools and <br />
+        <span className="text-[#D2042D]"> Astute Financial Analysis </span>
+
       </div>
     </div>
   </div>,
-  <div>
+  <div className="relative">
     <Image
       src="/slider2.png"
       alt="offer"
@@ -312,20 +243,13 @@ export const financialItems = [
       className={`object-cover`}
     />
     <div
-      style={{
-        position: "absolute",
-        top: "30%",
-        left: "50rem",
-        padding: "1rem",
-        color: "white",
-      }}
+      className="absolute md:top-[30%] md:left-[50rem] p-4 text-white top-[12%] left-[12rem]"
     >
-      <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#000000" }}>
+      <div className="text-base md:text-[2.5rem] font-bold text-black">
         Did You Know?
         <br />
-        <span style={{ color: "#D2042D" }}>
-          Investors Spend 3 minutes
-          <br /> Deciding Your Fate
+        <span className="text-[#D2042D]">
+          Investors Spend 3 minutes <br /> Deciding Your Fate
         </span>
       </div>
     </div>

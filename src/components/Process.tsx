@@ -63,8 +63,8 @@ const Process = () => {
         <div style={{ padding: "10px" }} className="text-center">
       {sectionsData.map((section, index) => (
         <div key={index} style={{ marginBottom: "30px" }}>
-          <h2 className="text-[#d2042d] font-bold text-xl">{section.heading}</h2>
-          <p className="font-semibold">{section.description}</p>
+          <h2 className="text-[#d2042d] font-bold text-base">{section.heading}</h2>
+          <p className="text-sm font-semibold">{section.description}</p>
         </div>
       ))}
     </div>
