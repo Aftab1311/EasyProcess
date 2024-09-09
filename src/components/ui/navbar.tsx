@@ -51,7 +51,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full z-50">
       <div className="w-full text-gray-300 bg-black bg-opacity-90 backdrop-blur-md py-1 hidden md:flex justify-around items-center">
-      <div className="flex flex-row items-start gap-6">
+      <div className="flex flex-row items-start gap-6 py-2">
         <div className="flex items-center gap-4">
            <MdLocationPin className="text-3xl ml-3" />
               <p className="text-sm">
@@ -66,7 +66,7 @@ const Navbar = () => {
        </div>
      </div>
 
-        <div className="flex justify-center items-center gap-2 ml-4" style={{ marginLeft: '245px' }}>
+        <div className="flex justify-center items-center gap-2 ml-4" style={{ marginLeft: '345px' }}>
           <FaFacebookF className="text-2xl text-white" />
           <FaInstagram className="text-2xl text-white" />
           <FaLinkedinIn className="text-2xl text-white" />
@@ -141,11 +141,11 @@ const Navbar = () => {
           {/* Mobile Sponsor Button */}
           <Link
             href="#contact-us"
-            className="text-center flex justify-center mx-auto my-2 md:mx-0 hidden"
+            className="text-center flex justify-center my-2 md:mx-0 hidden "
           >
             <button className="relative inline-flex h-8 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-4 focus:ring-rose-600 focus:ring-offset-4 focus:ring-offset-slate-50">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#D20420_50%,#E2CBFF_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white px-3 py-1 text-sm font-medium text-black backdrop-blur-3xl">
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white px-6 py-1 text-sm font-medium text-black backdrop-blur-3xl ">
                 Contact Us
               </span>
             </button>
@@ -157,9 +157,9 @@ const Navbar = () => {
           href="#contact-us"
           className="text-center mx-auto mt-2 md:mx-0 hidden lg:flex"
         >
-          <button className="relative inline-flex h-8 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 focus:ring-offset-slate-50 ml-4">
+          <button className="relative inline-flex h-8 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 focus:ring-offset-slate-50 ">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#D20420_50%,#E2CBFF_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white px-3 py-1 text-sm font-medium text-black backdrop-blur-3xl">
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white px-6 py-1 text-sm font-medium text-black backdrop-blur-3xl">
               Contact Us
             </span>
           </button>
