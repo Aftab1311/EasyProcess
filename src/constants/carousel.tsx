@@ -58,7 +58,7 @@ export const valuationItems = [
   </div>,
   <div className="relative">
     <Image
-      src="/carousel/val1.avif"
+      src="/carousel/val5.jpg"
       alt="offer"
       width={2000}
       height={2000}
