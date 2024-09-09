@@ -26,7 +26,7 @@ const services = [
     desc: "Unlock the true value of your business with our precise and investor-approved valuation services. Using multi-method approaches and realistic financial modeling, we deliver credible valuations that meet international standards and satisfy investor scrutiny.",
   },
   {
-    title: "Pitch Deck & Modelling",
+    title: "Pitching Deck",
     bg: "/images/hero/ser3.jpg",
     href: "/PitchDeck",
     icon: <FaClipboardList />,
@@ -47,7 +47,7 @@ const services = [
     desc: "Transform your business with expert financial analysis and Excel automation from EaseMyProcess. Improve accuracy, boost efficiency by up to 80%, and make data-driven decisions with our tailored dashboards forecasting, and budgeting solutions.",
   },
   {
-    title: "Deal Advisory & Implementation",
+    title: "Deal Guidance and Assurance",
     bg: "/images/hero/ser6.png",
     href: "/DealAdvisory",
     icon: <FaFileInvoiceDollar />,

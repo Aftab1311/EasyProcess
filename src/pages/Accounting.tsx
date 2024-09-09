@@ -12,6 +12,7 @@ import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
 import { accountingFaqs } from "@/constants/faqs";
 import { accountingItems } from "@/constants/carousel";
+import Compilance from "@/components/Accounting";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -60,7 +61,8 @@ const Accounting = () => {
         fourthDescription="Monitor and enhance the financial health of your company."
       />
 
-      <HomeService />
+
+      <Compilance/>
       <ContactUs />
       <Process />
       <Portfolio />

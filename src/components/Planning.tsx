@@ -3,32 +3,33 @@ import { IoStatsChart } from "react-icons/io5";
 import Image from "next/image"; 
 
 
-export default function Funding() {
+export default function Planning() {
      
     const funding = [{
-        title: "Seed Funds",
-        desc: "Obtain equity funds with a minimum investment of INR 10,000.",
+        title: "Simplified Quarterly and Monthly Reporting",
+        desc: "For simple reporting, use Management Information Systems (MIS). We put up processes for reliable reporting so you may concentrate on in-depth research and strategic insights. Accurate Predicting Throughout Periods.Manage uncertainty by utilizing comprehensive reports across many departments and currencies. Learn about the performance of your company to make wise decisions and promote long-term expansion.",
         icon: <IoStatsChart />,
         bg: "/images/hero/ser1.jpg",
     },
-    // {
-    //     title: "Venture capital",
-    //     desc: "We help you formulate business fundraising strategy highlighting your business' value and growth potential investors, inspiring them to inject capital.",
-    //     icon: <IoStatsChart />,
-    //     bg: "/images/hero/ser2.jpg",
-    // },
     {
-        title: "Angel Investing",
-        desc: "Show off your startup's potential to raise INR 4 crores and beyond.",
+        title: "Working Solutions for Excel-Based Budgeting ",
+        desc: "Create simple Excel budgets and contrast them with actual outcomes. Make better choices so that you can successfully adjust to shifting company situations.",
+        icon: <IoStatsChart />,
+        bg: "/images/hero/ser2.jpg",
+    },
+    {
+        title: "Effective Automation of Workflows",
+        desc: "Use strong Excel formulas to automate chores and increase productivity.Align resources with growth-oriented strategic priorities.",
         icon: <IoStatsChart />,
         bg: "/images/hero/ser3.jpg",
     },
     {
-        title: "Debt Capital",
-        desc: "Acquire borrowed money for immediate or future requirements.",
+        title: "Customized Training in Excel for Improved Proficiency",
+        desc: " Enhance the abilities of your group with customized Excel instruction. Boost output, improve data analysis, and streamline .",
         icon: <IoStatsChart />,
         bg: "/images/hero/ser4.png",
-    }
+    },
+   
     ]
 
 
@@ -36,8 +37,8 @@ export default function Funding() {
         
          <div className="w-full py-10 bg-[#a60424]">
        <div className="container mx-auto">
-            <h1 className="text-3xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
-            Types of Financial Support
+            <h1 className="text-2xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
+            Financial and Planning's Services
             </h1>
          <div className="grid grid-cols-1 md:grid-cols-3">
             {funding.map((fund, index) => (
