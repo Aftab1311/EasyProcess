@@ -12,7 +12,7 @@ import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
 import { homeFaqs, pitchDeckFaqs } from "@/constants/faqs";
 import { pitchItems } from "@/constants/carousel";
-import Pitch from "@/components/pitch";
+import Pitch from "@/components/Pitch";
 
 const poppins = Poppins({
   subsets: ["latin"],
