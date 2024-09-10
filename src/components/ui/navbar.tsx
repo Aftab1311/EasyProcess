@@ -52,8 +52,8 @@ const Navbar = () => {
   return (
     <div className="fixed w-full z-50">
 
-      <div className="w-full text-gray-300 bg-black bg-opacity-90 backdrop-blur-md py-1 hidden md:flex justify-between items-center px-6">
-        <div className="flex flex-row items-start gap-6">
+      <div className="w-full text-gray-300 bg-black bg-opacity-90 backdrop-blur-md py-2 hidden md:flex justify-between items-center px-[100px]">
+        <div className="flex flex-row items-start gap-6 ">
           <div className="flex items-center gap-3">
             <MdLocationPin className="text-3xl ml-3" />
             <p className="text-sm">
