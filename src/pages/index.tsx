@@ -5,6 +5,7 @@ import Navbar from "@/components/ui/navbar";
 import Head from "next/head";
 import MainHero from "@/components/MainHero";
 import { homeFaqs } from "@/constants/faqs";
+import HomeService from "@/components/HomeService";
 
 const poppins = Poppins({
   subsets: ["latin"],

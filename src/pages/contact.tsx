@@ -1,4 +1,5 @@
 import Footer from "@/components/ui/footer";
+import { useState } from 'react';
 import Navbar from "@/components/ui/navbar";
 import WhatsappButton from "@/components/whatapp";
 import Head from "next/head";
@@ -7,10 +8,36 @@ import { motion } from "framer-motion";
 type Props = {};
 
 export default function contact({}: Props) {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Construct the mailto URL
+    const mailtoUrl = `mailto:anmolruhella23@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`
+    )}`;
+
+    // Open the mail client
+    window.location.href = mailtoUrl;
+
+    // Optionally, clear the form fields
+    setName('');
+    setEmail('');
+    setPhone('');
+    setSubject('');
+    setMessage('');
+  };
   return (
     <div>
       <Head>
-        <title>Contact | Ease My Process</title>
+        <title> Contact | Ease My Process</title>
       </Head>
       <Navbar />
       <WhatsappButton />
@@ -86,7 +113,8 @@ export default function contact({}: Props) {
                 id="name"
                 name="name"
                 className="w-full bg-white rounded border border-gray-300 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
+                onChange={(e) => setName(e.target.value)}
+             />
             </div>
             <div className="relative mb-4">
               <label className="leading-7 text-sm text-gray-600">Email <span className="text-red-500">*</span></label>
@@ -95,15 +123,17 @@ export default function contact({}: Props) {
                 id="email"
                 name="email"
                 className="w-full bg-white rounded border border-gray-300 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="relative mb-4">
               <label className="leading-7 text-sm text-gray-600">Contact Number</label>
               <input
-                type="email"
-                id="email"
-                name="email"
+                type="phone"
+                id="phone"
+                name="phone"
                 className="w-full bg-white rounded border border-gray-300 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
             <div className="relative mb-4">
@@ -113,6 +143,7 @@ export default function contact({}: Props) {
                 id="subject"
                 name="subject"
                 className="w-full bg-white rounded border border-gray-300 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                onChange={(e) => setSubject(e.target.value)}
               />
             </div>
             <div className="relative mb-4">
@@ -121,10 +152,11 @@ export default function contact({}: Props) {
                 id="message"
                 name="message"
                 className="w-full bg-white rounded border border-gray-300 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <button className="text-white hover:bg-rose-500 border-0 py-2 px-6 focus:outline-none transition bg-[#D20420] rounded text-lg">
-              Send
+              Submit
             </button>
             <p className="text-xs text-gray-500 mt-3">
            Fields marked with <span className="text-red-500">*</span> are mandatory

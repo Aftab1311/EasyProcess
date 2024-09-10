@@ -12,6 +12,7 @@ import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
 import { financialPlanningFaqs } from "@/constants/faqs";
 import { financialItems } from "@/constants/carousel";
+import Planning from "@/components/Planning";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -61,7 +62,7 @@ const FinancialPlanning = () => {
         fifthTitle="Grow Quicker:"
         fifthDescription="To increase sales and profits, comprehend pricing, rivalry, and customer profitability."
       />
-      <HomeService />
+      <Planning/>
       <ContactUs />
       <Process />
       <Portfolio />

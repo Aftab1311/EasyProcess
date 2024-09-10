@@ -3,32 +3,39 @@ import { IoStatsChart } from "react-icons/io5";
 import Image from "next/image"; 
 
 
-export default function Funding() {
+export default function Compilance() {
      
     const funding = [{
-        title: "Seed Funds",
-        desc: "Obtain equity funds with a minimum investment of INR 10,000.",
+        title: "Comply with Indian regulations",
+        desc: "Precisely compute and submit monthly taxes due (TDS and GST).On-time returns (quarterly or monthly).Hearings and litigation help.Management of secretarial compliance.",
         icon: <IoStatsChart />,
         bg: "/images/hero/ser1.jpg",
     },
-    // {
-    //     title: "Venture capital",
-    //     desc: "We help you formulate business fundraising strategy highlighting your business' value and growth potential investors, inspiring them to inject capital.",
-    //     icon: <IoStatsChart />,
-    //     bg: "/images/hero/ser2.jpg",
-    // },
     {
-        title: "Angel Investing",
-        desc: "Show off your startup's potential to raise INR 4 crores and beyond.",
+        title: "Professional Services for Audit Support and Easily get ready for audits",
+        desc: "Pre-audit planning and evaluation.Working together with auditors.",
+        icon: <IoStatsChart />,
+        bg: "/images/hero/ser2.jpg",
+    },
+    {
+        title: "Management of Accounts Receivable and Utilize our services to increase cash flow:",
+        desc: "Effective invoice creation and delivery.Proactive collections and follow-up.Reconciliation of customer accounts. Reports and analysis that age.",
         icon: <IoStatsChart />,
         bg: "/images/hero/ser3.jpg",
     },
     {
-        title: "Debt Capital",
-        desc: "Acquire borrowed money for immediate or future requirements.",
+        title: "Management of Accounts Payable",
+        desc: "Simplify your payment procedures by processing and approving invoices accurately.Efficient scheduling of payments.The reconciliation of suppliers.Monitoring and documenting expenses.",
         icon: <IoStatsChart />,
         bg: "/images/hero/ser4.png",
-    }
+    },
+    {
+        title: "Strategic Board Pack Assembly",
+        desc: "Assist the board in reaching strategic decisions:Thorough financial evaluation.KPI dashboards.Competitive and market insights.Tailored presentations and reports.",
+        icon: <IoStatsChart />,
+        bg: "/images/hero/ser4.png",
+    },
+
     ]
 
 
@@ -36,8 +43,8 @@ export default function Funding() {
         
          <div className="w-full py-10 bg-[#a60424]">
        <div className="container mx-auto">
-            <h1 className="text-3xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
-            Types of Financial Support
+            <h1 className="text-2xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
+            Accounting and Compilance's Services
             </h1>
          <div className="grid grid-cols-1 md:grid-cols-3">
             {funding.map((fund, index) => (

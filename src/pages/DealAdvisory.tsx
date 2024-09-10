@@ -12,6 +12,7 @@ import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
 import { dealAdvisoryFaqs } from "@/constants/faqs";
 import { dealItems } from "@/constants/carousel";
+import Guidance from "@/components/Deal_Guidance";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -62,10 +63,10 @@ const DealAdvisory = () => {
         fifthTitle="Client Focus:"
         fifthDescription="In an economy that is expanding quickly, we address problems promptly and communicate effectively."
       />
-      <HomeService />
-      <ContactUs />
-      <Process />
-      <Portfolio />
+      <Guidance/>
+      <ContactUs/>
+      <Process/>
+      <Portfolio/>
       <FAQs FaqTableData={dealAdvisoryFaqs} heading="FAQs" />
       <Footer />
     </main>

@@ -8,6 +8,7 @@ import Clients from "./Clients";
 import { GoArrowRight } from "react-icons/go";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import Portfolio from "./Portfolio";
+import { Link } from "react-alice-carousel";
 
 export default function MainHero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,9 +41,14 @@ export default function MainHero() {
             <h3 className="text-xl md:text-4xl font-semibold underline">
               Your Business Growth Partner Inventing Your Growth Strategy
             </h3>
-            <button className="max-w-[150px] bg-white py-2 px-2 text-red-500 underline rounded-md">
-              Contact Us
-            </button>
+            <Link
+              href="#contact-us"
+              className="text-center mx-auto mt-2 md:mx-0 hidden lg:flex"
+            >
+              <button className="max-w-[152px] bg-white py-2 px-2 text-red-500 underline rounded-md">
+                Contact Us
+              </button>
+            </Link>
           </div>
           <div className="flex items-center justify-center w-full md:w-1/2">
             <div className="relative">
@@ -116,7 +122,9 @@ export default function MainHero() {
                     <h3 className="text-sm md:text-base text-black underline">
                       Trusted by
                     </h3>
-                    <h2 className="text-base md:text-3xl text-black underline">Top firms</h2>
+                    <h2 className="text-base md:text-3xl text-black underline">
+                      Top firms
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -127,7 +135,9 @@ export default function MainHero() {
                     Client Satisfaction
                   </h2>
                   <div>
-                    <h3 className="text-sm md:text-base text-black underline">98%</h3>
+                    <h3 className="text-sm md:text-base text-black underline">
+                      98%
+                    </h3>
                     <h2 className="text-xl md:text-3xl text-black underline">
                       Approval rate
                     </h2>
@@ -161,7 +171,9 @@ export default function MainHero() {
                     <h3 className="text-sm md:text-base text-black underline">
                       save upto
                     </h3>
-                    <h2 className="text-base md:text-3xl text-black underline">60%</h2>
+                    <h2 className="text-base md:text-3xl text-black underline">
+                      60%
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -172,7 +184,9 @@ export default function MainHero() {
                     Expert Team
                   </h2>
                   <div>
-                    <h3 className="text-sm md:text-base text-black underline">Led by</h3>
+                    <h3 className="text-sm md:text-base text-black underline">
+                      Led by
+                    </h3>
                     <h2 className="text-base md:text-3xl text-black underline">
                       Experienced platforms
                     </h2>
@@ -210,7 +224,7 @@ export default function MainHero() {
               />
             </div>
             <h1 className="text-xl lg:text-4xl">
-            We are a strong team that brings innovative ideas into production.
+              We are a strong team that brings innovative ideas into production.
             </h1>
           </div>
 
@@ -225,14 +239,14 @@ export default function MainHero() {
                   className="hover:scale-110 transition duration-700"
                 />
                 <div className="absolute bottom-36 md:bottom-40 left-1/2  -translate-x-1/2 w-[40px] md:w-[60px] h-[40px] md:h-[60px] rounded-full bg-black group-hover:bg-[#007ab9] transition duration-700 cursor-pointer  bg-opacity-35 flex items-center justify-center">
-                <a href="https://www.linkedin.com/in/anchal-singhal-248904122/">
-                  <Image
-                    src="/images/hero/linkedin.png"
-                    alt="LinkedIn Icon"
-                    width={40}
-                    height={40}
-                    className="w-[20px] md:w-[40px] h-[20px] md:h-[40px] "
-                  />
+                  <a href="https://www.linkedin.com/in/anchal-singhal-248904122/">
+                    <Image
+                      src="/images/hero/linkedin.png"
+                      alt="LinkedIn Icon"
+                      width={40}
+                      height={40}
+                      className="w-[20px] md:w-[40px] h-[20px] md:h-[40px] "
+                    />
                   </a>
                 </div>
               </div>
@@ -245,7 +259,13 @@ export default function MainHero() {
                 className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline"
                 onClick={handleOpenModal}
               >
-                <span className="text-[12px]">Read more</span> <span className="hidden md:block"><GoArrowRight size={30} /></span><span className="block md:hidden"><GoArrowRight size={20} /></span>
+                <span className="text-[12px]">Read more</span>{" "}
+                <span className="hidden md:block">
+                  <GoArrowRight size={30} />
+                </span>
+                <span className="block md:hidden">
+                  <GoArrowRight size={20} />
+                </span>
               </button>
               {isOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
@@ -254,7 +274,12 @@ export default function MainHero() {
                       className="absolute right-1 md:top-4 md:right-64  m-4 text-gray-300 hover:text-gray-900"
                       onClick={handleCloseModal}
                     >
-                      <span className="block md:hidden"><IoIosCloseCircleOutline size={40} /></span><span className="md:block hidden"><IoIosCloseCircleOutline size={50} /></span>
+                      <span className="block md:hidden">
+                        <IoIosCloseCircleOutline size={40} />
+                      </span>
+                      <span className="md:block hidden">
+                        <IoIosCloseCircleOutline size={50} />
+                      </span>
                     </button>
                     <div className="flex flex-col md:flex-row gap-2 md:gap-8">
                       <div className="w-full md:w-2/5 flex md:justify-end">
@@ -352,7 +377,9 @@ export default function MainHero() {
                         </div>
                         <div>
                           <ul className="text-[12px] md:text-base">
-                            <li className="font-bold  ml-4 underline">KEY SKILL</li>
+                            <li className="font-bold  ml-4 underline">
+                              KEY SKILL
+                            </li>
                             <li className="list-disc  ml-4 underline">
                               Corporate Finance
                             </li>
@@ -386,14 +413,14 @@ export default function MainHero() {
                   className="hover:scale-110 transition duration-700"
                 />
                 <div className="absolute bottom-36 md:bottom-40 left-1/2  -translate-x-1/2 w-[40px] md:w-[60px] h-[40px] md:h-[60px] rounded-full bg-black group-hover:bg-[#007ab9] transition duration-700 cursor-pointer bg-opacity-35 flex items-center justify-center">
-                <a href="https://www.linkedin.com/in/gujrani/">
-                  <Image
-                    src="/images/hero/linkedin.png"
-                    alt="LinkedIn Icon"
-                    width={40}
-                    height={40}
-                    className="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
-                  />
+                  <a href="https://www.linkedin.com/in/gujrani/">
+                    <Image
+                      src="/images/hero/linkedin.png"
+                      alt="LinkedIn Icon"
+                      width={40}
+                      height={40}
+                      className="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
+                    />
                   </a>
                 </div>
               </div>
@@ -405,8 +432,14 @@ export default function MainHero() {
                 className="text-white bg-gradient-to-r from-red-600 to-red-900 flex items-center gap-2 px-4 py-1 rounded-3xl font-bold underline"
                 onClick={handleOpenModal2}
               >
-                <span className="text-[12px]">Read more</span> <span className="hidden md:block"><GoArrowRight size={30} /></span><span className="block md:hidden"><GoArrowRight size={20} /></span>
-                </button>
+                <span className="text-[12px]">Read more</span>{" "}
+                <span className="hidden md:block">
+                  <GoArrowRight size={30} />
+                </span>
+                <span className="block md:hidden">
+                  <GoArrowRight size={20} />
+                </span>
+              </button>
               {isOpen2 && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
                   <div className="bg-white p-6 rounded-[40px] shadow-lg max-w-[1000px] w-full">
@@ -414,8 +447,13 @@ export default function MainHero() {
                       className="absolute md: right-1 md:top-4 md:right-64  m-4 text-gray-300 hover:text-gray-900"
                       onClick={handleCloseModal2}
                     >
-                      <span className="block md:hidden"><IoIosCloseCircleOutline size={40} /></span><span className="md:block hidden"><IoIosCloseCircleOutline size={50} /></span>
-                      </button>
+                      <span className="block md:hidden">
+                        <IoIosCloseCircleOutline size={40} />
+                      </span>
+                      <span className="md:block hidden">
+                        <IoIosCloseCircleOutline size={50} />
+                      </span>
+                    </button>
                     <div className="flex flex-col md:flex-row gap-2 md:gap-8">
                       <div className="w-full md:w-2/5 flex md:justify-end">
                         <img
@@ -512,8 +550,12 @@ export default function MainHero() {
                         <div>
                           <ul className="text-[12px] md:text-base">
                             <li className="font-bold  underline">KEY SKILL</li>
-                            <li className="list-disc  ml-4 underline">Accounting</li>
-                            <li className="list-disc  ml-4 underline">Advance Excel</li>
+                            <li className="list-disc  ml-4 underline">
+                              Accounting
+                            </li>
+                            <li className="list-disc  ml-4 underline">
+                              Advance Excel
+                            </li>
                             <li className="list-disc  ml-4 underline">
                               Data Analysis/ Visualization
                             </li>

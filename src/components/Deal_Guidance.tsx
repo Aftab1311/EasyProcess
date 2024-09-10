@@ -3,41 +3,46 @@ import { IoStatsChart } from "react-icons/io5";
 import Image from "next/image"; 
 
 
-export default function Funding() {
+export default function Guidance() {
      
     const funding = [{
-        title: "Seed Funds",
-        desc: "Obtain equity funds with a minimum investment of INR 10,000.",
+        title: "Assessment of the Market and Viability",
+        desc: "Perform comprehensive market analyses to identify prospects and obstacles.Conduct feasibility studies to assess the viability of your startup",
         icon: <IoStatsChart />,
         bg: "/images/hero/ser1.jpg",
     },
-    // {
-    //     title: "Venture capital",
-    //     desc: "We help you formulate business fundraising strategy highlighting your business' value and growth potential investors, inspiring them to inject capital.",
-    //     icon: <IoStatsChart />,
-    //     bg: "/images/hero/ser2.jpg",
-    // },
     {
-        title: "Angel Investing",
-        desc: "Show off your startup's potential to raise INR 4 crores and beyond.",
+        title: "Strategic M&A Structuring ",
+        desc: "Skillfully organize mergers and acquisitions while taking complicated tax and regulatory issues into account.",
+        icon: <IoStatsChart />,
+        bg: "/images/hero/ser2.jpg",
+    },
+    {
+        title: "Services for Business Formation and Structuring",
+        desc: "Offer guidance on establishing the optimal company structure for your startup.Create and implement exit plans to increase the value of your startup.",
         icon: <IoStatsChart />,
         bg: "/images/hero/ser3.jpg",
     },
     {
-        title: "Debt Capital",
-        desc: "Acquire borrowed money for immediate or future requirements.",
+        title: "Transaction Implementation Support",
+        desc: "Provide assistance at every stage of the transaction, making sure that every document is carefully reviewed.",
         icon: <IoStatsChart />,
         bg: "/images/hero/ser4.png",
-    }
-    ]
+    },
+    {
+        title: "Support for Due Diligence",
+        desc: "Encourage information sharing among interested parties.Recognize and handle important risks and difficulties.Do extensive research on tax-related issues.",
+        icon: <IoStatsChart />,
+        bg: "/images/hero/ser4.png",
+    }]
 
 
     return (
         
          <div className="w-full py-10 bg-[#a60424]">
        <div className="container mx-auto">
-            <h1 className="text-3xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
-            Types of Financial Support
+            <h1 className="text-2xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
+            Deal Guidance and Assurance's Services
             </h1>
          <div className="grid grid-cols-1 md:grid-cols-3">
             {funding.map((fund, index) => (
