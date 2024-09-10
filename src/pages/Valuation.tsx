@@ -12,7 +12,7 @@ import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
 import { valuationFaqs } from "@/constants/faqs";
 import { valuationItems } from "@/constants/carousel";
-import Variable from "@/components/valuation";
+import Variable from "@/components/Valuation";
 
 const poppins = Poppins({
   subsets: ["latin"],
