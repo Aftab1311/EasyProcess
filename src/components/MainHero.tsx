@@ -45,7 +45,7 @@ export default function MainHero() {
               href="#contact-us"
               className="text-center mx-auto mt-2 md:mx-0 hidden lg:flex"
             >
-              <button className="max-w-[150px] bg-white py-2 px-2 text-red-500 underline rounded-md">
+              <button className="max-w-[152px] bg-white py-2 px-2 text-red-500 underline rounded-md">
                 Contact Us
               </button>
             </Link>
