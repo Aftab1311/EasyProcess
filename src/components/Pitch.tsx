@@ -1,6 +1,13 @@
 
 import { IoStatsChart } from "react-icons/io5";
 import Image from "next/image"; 
+import { HiOutlinePresentationChartBar } from "react-icons/hi";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { FaLightbulb } from "react-icons/fa";
+import { FaCommentDollar } from "react-icons/fa";
+import { FaBusinessTime } from "react-icons/fa";
+import { FaTachometerAlt } from "react-icons/fa";
+
 
 
 export default function Pitch() {
@@ -8,37 +15,37 @@ export default function Pitch() {
     const funding = [{
         title: "Personalized Pitch Decks",
         desc: "Obtain a personalized pitch deck that effectively communicates your story to potential investors. We combine excellent design and market analysis to make your pitch stand out.",
-        icon: <IoStatsChart />,
+        icon: <HiOutlinePresentationChartBar/>,
         bg: "/images/hero/ser1.jpg",
     },
     {
         title: "Coaching for Pitch Mastery",
         desc: "With our coaching, deliver your pitches more effectively. Develop your stage presence, deliver your tale effectively, and answer challenging questions with assurance.",
-        icon: <IoStatsChart />,
+        icon: <FaChalkboardTeacher />,
         bg: "/images/hero/ser2.jpg",
     },
     {
         title: "Business Strategy Development",
         desc: "With our help, you can lay out a clear route to success. We assist you in making three to five-year plans, researching marketplaces and rivals, and creating doable expansion strategies.",
-        icon: <IoStatsChart />,
+        icon: <FaLightbulb/>,
         bg: "/images/hero/ser3.jpg",
     },
     {
         title: "Captivating Hints",
         desc: "Use our teasers to pique investor interest. They arouse investors' curiosity more than serving as introductions.",
-        icon: <IoStatsChart />,
+        icon: <FaCommentDollar />,
         bg: "/images/hero/ser4.png",
     },
     {
         title: "Financial Models That Change Over Time",
         desc: "Use our financial models to go beyond simple spreadsheets. Obtain modifiable forecasts, crucial graphics and precise forecasts to wow investors with your research.",
-        icon: <IoStatsChart />,
+        icon: <FaBusinessTime  />,
         bg: "/images/hero/ser4.png",
     },
      {
         title: "Competitive Analysis and Industry Insights",
         desc: "With our competitive research and industry insights, stay ahead of the game. Recognize market trends,to make informed decisions, consider market dynamics and rival strategy.",
-        icon: <IoStatsChart />,
+        icon: <FaTachometerAlt  />,
         bg: "/images/hero/ser4.png",
     }
     ]

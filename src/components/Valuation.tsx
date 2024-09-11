@@ -1,32 +1,34 @@
-
 import { IoStatsChart } from "react-icons/io5";
 import Image from "next/image"; 
-
+import { TbBusinessplan } from "react-icons/tb";
+import { FaBalanceScale } from "react-icons/fa";
+import { HiMiniClipboardDocumentCheck } from "react-icons/hi2";
+import { GiBullseye } from "react-icons/gi";
 
 export default function Variable() {
      
     const funding = [{
         title: "Business Valuation",
         desc: "Evaluate rivals, industry trends, and economic considerations to determine your company's genuine worth. Start-up valuation: Acquire precise values that are customized for startups, benefiting investors as well as founders.",
-        icon: <IoStatsChart />,
+        icon: <TbBusinessplan />,
         bg: "/images/hero/ser1.jpg",
     },
     {
         title: "Legal Valuation",
         desc: "Professional services for adherence to company and tax rules as well as legal needs. Determine the worth of your technology, intellectual property, and brand with intangible asset valuation.",
-        icon: <IoStatsChart />,
+        icon: <FaBalanceScale  />,
         bg: "/images/hero/ser2.jpg",
     },
     {
         title: "Goodwill Impairment Testing",
         desc: "Process goodwill impairment in compliance with international norms. Acquire accurate insights for restructuring and mergers with our mergers and restructuring valuation service",
-        icon: <IoStatsChart />,
+        icon: <HiMiniClipboardDocumentCheck />,
         bg: "/images/hero/ser3.jpg",
     },
     {
         title: "Accuracy and Integrity",
         desc: " Accuracy and integrity are guaranteed by us as registered valuers.Comply with regulations regarding stock exchange valuations and SEBI.",
-        icon: <IoStatsChart />,
+        icon: <GiBullseye />,
         bg: "/images/hero/ser4.png",
     }]
 

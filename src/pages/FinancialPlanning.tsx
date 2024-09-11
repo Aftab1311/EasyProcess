@@ -46,22 +46,138 @@ const FinancialPlanning = () => {
       </Head>
       <Navbar />
       <Hero items={financialItems} />
-      <WhyUs
-        heading="Just Why Opt for EaseMyProcess?"
-        subheading="We offer unique solutions tailored to your needs."
-        imageSrc="/FinancialPlanningWhyus.png"
-
-        firstTitle="Save Time:"
-        firstDescription="Replicated duties take up a lot of an employee's time. Each month, our tools save more than 20 hours."
-        secondTitle="Boost Accuracy:"
-        secondDescription="Obtain accurate financial data and personalized dashboards."
-        thirdTitle="Boost Efficiency"
-        thirdDescription="With our Excel training, team productivity can rise by as much as 60%."
-        fourthTitle="Make Wise Choices:"
-        fourthDescription="Examine expenses to develop more effective pricing plans."
-        fifthTitle="Grow Quicker:"
-        fifthDescription="To increase sales and profits, comprehend pricing, rivalry, and customer profitability."
+      <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+    <div style={{ flex: 2, marginLeft: '80px' }}>
+      <img 
+        src="/FinancialPlanningWhyus.png" 
+        alt="Why Choose Us" 
+        style={{ width: '100%', height: 'auto' }}
       />
+    </div>
+
+    <div style={{ flex: 2, marginLeft: '20px' }}>
+      <h1 style={{ fontSize: '70px', marginBottom: '10px', color: '#a60424' , fontWeight:'bold' }}>Just Why Opt for EaseMyProcess?</h1>
+      <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
+      We offer unique solutions tailored to your needs.
+      </h2>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+        <div 
+          style={{ 
+            width: '550px', 
+            border: '1px solid #ddd', 
+            borderRadius: '10px', 
+            padding: '20px', 
+            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
+            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+            cursor: 'pointer'
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Save Time</h3>
+          <p style={{ fontSize: '14px' }}>Replicated duties take up a lot of an employee's time. Each month, our tools save more than 20 hours.</p>
+        </div>
+        <div 
+          style={{ 
+            width: '550px', 
+            border: '1px solid #ddd', 
+            borderRadius: '10px', 
+            padding: '20px', 
+            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
+            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+            cursor: 'pointer'
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Boost Accuracy</h3>
+          <p style={{ fontSize: '14px' }}>Obtain accurate financial data and personalized dashboards."</p>
+        </div>
+        <div 
+          style={{ 
+            width: '550px', 
+            border: '1px solid #ddd', 
+            borderRadius: '10px', 
+            padding: '20px', 
+            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
+            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+            cursor: 'pointer'
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Boost Efficiency</h3>
+          <p style={{ fontSize: '14px' }}>With our Excel training, team productivity can rise by as much as 60%. </p>
+        </div>
+
+        <div 
+          style={{ 
+            width: '550px', 
+            border: '1px solid #ddd', 
+            borderRadius: '10px', 
+            padding: '20px', 
+            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
+            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+            cursor: 'pointer'
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Make Wise Choices:</h3>
+          <p style={{ fontSize: '14px' }}>Examine expenses to develop more effective pricing plans. </p>
+        </div>
+        <div 
+          style={{ 
+            width: '550px', 
+            border: '1px solid #ddd', 
+            borderRadius: '10px', 
+            padding: '20px', 
+            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
+            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+            cursor: 'pointer'
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Grow Quicker</h3>
+          <p style={{ fontSize: '14px' }}>To increase sales and profits, comprehend pricing, rivalry, and customer profitability.
+           </p>
+        </div>
+       
+       
+      </div>
+    </div>
+  </div>
       <Planning/>
       <ContactUs />
       <Process />

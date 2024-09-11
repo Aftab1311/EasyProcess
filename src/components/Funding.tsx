@@ -1,5 +1,8 @@
+import { FaHandHoldingUsd } from "react-icons/fa";
+import { GiAngelWings } from "react-icons/gi";
+import { FaLandmarkDome } from "react-icons/fa6";
 
-import { IoStatsChart } from "react-icons/io5";
+
 import Image from "next/image"; 
 
 
@@ -8,7 +11,7 @@ export default function Funding() {
     const funding = [{
         title: "Seed Funds",
         desc: "Obtain equity funds with a minimum investment of INR 10,000.",
-        icon: <IoStatsChart />,
+        icon: <FaHandHoldingUsd />,
         bg: "/images/hero/ser1.jpg",
     },
     // {
@@ -20,13 +23,13 @@ export default function Funding() {
     {
         title: "Angel Investing",
         desc: "Show off your startup's potential to raise INR 4 crores and beyond.",
-        icon: <IoStatsChart />,
+        icon: <GiAngelWings />,
         bg: "/images/hero/ser3.jpg",
     },
     {
         title: "Debt Capital",
         desc: "Acquire borrowed money for immediate or future requirements.",
-        icon: <IoStatsChart />,
+        icon: <FaLandmarkDome />,
         bg: "/images/hero/ser4.png",
     }
     ]

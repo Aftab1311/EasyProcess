@@ -1,6 +1,10 @@
 
 import { IoStatsChart } from "react-icons/io5";
 import Image from "next/image"; 
+import { FaCalendarAlt } from "react-icons/fa";
+import { RiFileExcel2Fill } from "react-icons/ri";
+import { FaRobot } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
 
 
 export default function Planning() {
@@ -8,25 +12,25 @@ export default function Planning() {
     const funding = [{
         title: "Simplified Quarterly and Monthly Reporting",
         desc: "For simple reporting, use Management Information Systems (MIS). We put up processes for reliable reporting so you may concentrate on in-depth research and strategic insights. Accurate Predicting Throughout Periods.Manage uncertainty by utilizing comprehensive reports across many departments and currencies. Learn about the performance of your company to make wise decisions and promote long-term expansion.",
-        icon: <IoStatsChart />,
+        icon: <FaCalendarAlt />,
         bg: "/images/hero/ser1.jpg",
     },
     {
         title: "Working Solutions for Excel-Based Budgeting ",
         desc: "Create simple Excel budgets and contrast them with actual outcomes. Make better choices so that you can successfully adjust to shifting company situations.",
-        icon: <IoStatsChart />,
+        icon: <RiFileExcel2Fill  />,
         bg: "/images/hero/ser2.jpg",
     },
     {
         title: "Effective Automation of Workflows",
         desc: "Use strong Excel formulas to automate chores and increase productivity.Align resources with growth-oriented strategic priorities.",
-        icon: <IoStatsChart />,
+        icon: <FaRobot />,
         bg: "/images/hero/ser3.jpg",
     },
     {
         title: "Customized Training in Excel for Improved Proficiency",
         desc: " Enhance the abilities of your group with customized Excel instruction. Boost output, improve data analysis, and streamline .",
-        icon: <IoStatsChart />,
+        icon: <FaBriefcase />,
         bg: "/images/hero/ser4.png",
     },
    

@@ -1,6 +1,13 @@
 
 import { IoStatsChart } from "react-icons/io5";
-import Image from "next/image"; 
+import Image from "next/image";
+import { FaBuildingFlag } from "react-icons/fa6"; 
+import { FaUserTie } from "react-icons/fa6";
+import { FaCreditCard } from "react-icons/fa6";
+import { FaFileInvoiceDollar } from "react-icons/fa";
+import { FaMapSigns } from "react-icons/fa";
+
+
 
 
 export default function Compilance() {
@@ -8,31 +15,31 @@ export default function Compilance() {
     const funding = [{
         title: "Comply with Indian regulations",
         desc: "Precisely compute and submit monthly taxes due (TDS and GST).On-time returns (quarterly or monthly).Hearings and litigation help.Management of secretarial compliance.",
-        icon: <IoStatsChart />,
+        icon: <FaBuildingFlag />,
         bg: "/images/hero/ser1.jpg",
     },
     {
         title: "Professional Services for Audit Support and Easily get ready for audits",
         desc: "Pre-audit planning and evaluation.Working together with auditors.",
-        icon: <IoStatsChart />,
+        icon: <FaUserTie/>,
         bg: "/images/hero/ser2.jpg",
     },
     {
         title: "Management of Accounts Receivable and Utilize our services to increase cash flow:",
         desc: "Effective invoice creation and delivery.Proactive collections and follow-up.Reconciliation of customer accounts. Reports and analysis that age.",
-        icon: <IoStatsChart />,
+        icon: <FaFileInvoiceDollar />,
         bg: "/images/hero/ser3.jpg",
     },
     {
         title: "Management of Accounts Payable",
         desc: "Simplify your payment procedures by processing and approving invoices accurately.Efficient scheduling of payments.The reconciliation of suppliers.Monitoring and documenting expenses.",
-        icon: <IoStatsChart />,
+        icon: <FaCreditCard />,
         bg: "/images/hero/ser4.png",
     },
     {
         title: "Strategic Board Pack Assembly",
         desc: "Assist the board in reaching strategic decisions:Thorough financial evaluation.KPI dashboards.Competitive and market insights.Tailored presentations and reports.",
-        icon: <IoStatsChart />,
+        icon: <FaMapSigns />,
         bg: "/images/hero/ser4.png",
     },
 

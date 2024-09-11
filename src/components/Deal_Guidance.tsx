@@ -1,6 +1,11 @@
 
 import { IoStatsChart } from "react-icons/io5";
 import Image from "next/image"; 
+import { FaStore } from "react-icons/fa";
+import { FaCogs } from "react-icons/fa";
+import { FaHandshake } from "react-icons/fa";
+import { FaConciergeBell } from "react-icons/fa";
+import { MdSupportAgent } from "react-icons/md";
 
 
 export default function Guidance() {
@@ -8,31 +13,31 @@ export default function Guidance() {
     const funding = [{
         title: "Assessment of the Market and Viability",
         desc: "Perform comprehensive market analyses to identify prospects and obstacles.Conduct feasibility studies to assess the viability of your startup",
-        icon: <IoStatsChart />,
+        icon: <FaStore  />,
         bg: "/images/hero/ser1.jpg",
     },
     {
         title: "Strategic M&A Structuring ",
         desc: "Skillfully organize mergers and acquisitions while taking complicated tax and regulatory issues into account.",
-        icon: <IoStatsChart />,
+        icon: <FaCogs />,
         bg: "/images/hero/ser2.jpg",
     },
     {
         title: "Services for Business Formation and Structuring",
         desc: "Offer guidance on establishing the optimal company structure for your startup.Create and implement exit plans to increase the value of your startup.",
-        icon: <IoStatsChart />,
+        icon: <FaHandshake />,
         bg: "/images/hero/ser3.jpg",
     },
     {
         title: "Transaction Implementation Support",
         desc: "Provide assistance at every stage of the transaction, making sure that every document is carefully reviewed.",
-        icon: <IoStatsChart />,
+        icon: <FaConciergeBell />,
         bg: "/images/hero/ser4.png",
     },
     {
         title: "Support for Due Diligence",
         desc: "Encourage information sharing among interested parties.Recognize and handle important risks and difficulties.Do extensive research on tax-related issues.",
-        icon: <IoStatsChart />,
+        icon: <MdSupportAgent />,
         bg: "/images/hero/ser4.png",
     }]
 

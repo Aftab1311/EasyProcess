@@ -46,18 +46,93 @@ const FundRaising = () => {
       </Head>
       <Navbar />
       <Hero items={fundingItems} />
-      <WhyUs
-        heading="Why Choose Us?"
-        subheading="Many companies require capital, but our approach is distinct:"
-        imageSrc="/FundRaisingwhyus.png"
+    
+      <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+      <div style={{ flex: 2, marginLeft: '80px' }}>
+        <img 
+          src="/FundRaisingwhyus.png" 
+          alt="Why Choose Us" 
+          style={{ width: '100%', height: 'auto' }}
+        />
+      </div>
 
-        firstTitle="Astute Approach:"
-        firstDescription="We employ the most effective techniques for your requirements."
-        secondTitle="Fact-driven approaches:"
-        secondDescription="Our decision-making relies on numerical data."
-        thirdTitle="Whole Assistance:"
-        thirdDescription="We provide support at every stage."
-      />
+      <div style={{ flex: 2, marginLeft: '20px' }}>
+        <h1 style={{ fontSize: '70px', marginBottom: '10px', color: '#a60424' , fontWeight:'bold' }}>Why Choose Us?</h1>
+        <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
+          Many companies require capital, but our approach is distinct:
+        </h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+          <div 
+            style={{ 
+              width: '550px', 
+              border: '1px solid #ddd', 
+              borderRadius: '10px', 
+              padding: '20px', 
+              boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
+              transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+              cursor: 'pointer'
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+              e.currentTarget.style.transform = 'scale(1.05)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+              e.currentTarget.style.transform = 'scale(1)';
+            }}
+          >
+            <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Astute Approach:</h3>
+            <p style={{ fontSize: '14px' }}>We employ the most effective techniques for your requirements.</p>
+          </div>
+          <div 
+            style={{ 
+              width: '550px', 
+              border: '1px solid #ddd', 
+              borderRadius: '10px', 
+              padding: '20px', 
+              boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
+              transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+              cursor: 'pointer'
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+              e.currentTarget.style.transform = 'scale(1.05)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+              e.currentTarget.style.transform = 'scale(1)';
+            }}
+          >
+            <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Fact-driven approaches:</h3>
+            <p style={{ fontSize: '14px' }}>Our decision-making relies on numerical data.</p>
+          </div>
+          <div 
+            style={{ 
+              width: '550px', 
+              border: '1px solid #ddd', 
+              borderRadius: '10px', 
+              padding: '20px', 
+              boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
+              transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+              cursor: 'pointer'
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+              e.currentTarget.style.transform = 'scale(1.05)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+              e.currentTarget.style.transform = 'scale(1)';
+            }}
+          >
+            <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Whole Assistance:</h3>
+            <p style={{ fontSize: '14px' }}>We provide support at every stage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    
 
       <Funding />
       <ContactUs />
